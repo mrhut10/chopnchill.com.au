@@ -11,17 +11,18 @@ const MenuSection = () => (
         pariatur.
       </p>
     </div>
-    <div className="flex items-center justify-around max-w-2xl mx-auto w-full">
-      <div className="bg-brand-blue flex font-display h-32 items-center justify-center text-white w-32 rounded-full">
+    <div className="flex items-center sm:justify-center overflow-x-auto max-w-2xl mx-auto w-full">
+      <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
         Breakfast
       </div>
-      <div className="bg-brand-blue flex font-display h-32 items-center justify-center text-white w-32 rounded-full">
+      <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
         Main Menu
       </div>
-      <div className="bg-brand-blue flex font-display h-32 items-center justify-center text-white w-32 rounded-full">
+
+      <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
         Take Away
       </div>
-      <div className="bg-brand-blue flex font-display h-32 items-center justify-center text-white w-32 rounded-full">
+      <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
         Beverages
       </div>
     </div>
