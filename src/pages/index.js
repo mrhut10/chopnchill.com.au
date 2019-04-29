@@ -1,21 +1,27 @@
 import React from 'react';
-// import { Link } from 'gatsby';
+import Footer from '../components/Footer';
 
-import Layout from '../components/Layout';
+import '../css/fonts.css';
+import '../css/tailwind.css';
+import '../css/typography.css';
+import '../css/global.css';
+
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Contact from '../components/Contact';
+import Header from '../components/Header';
+import MenuSection from '../components/MenuSection';
 
 const IndexPage = () => (
-  <Layout>
+  <div className="body antialiased flex flex-col font-sans leading-relaxed min-h-screen overflow-hidden relative text-gray-700 w-full">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Hero />
-    <About />
-    <Services />
-    <Contact />
-  </Layout>
+    <Header />
+    <main className="bg-white flex-1 mx-auto w-full">
+      <MenuSection />
+    </main>
+
+    <Footer />
+  </div>
 );
 
 export default IndexPage;

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Liquid Embrace";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/dk_liquid_embrace-webfont.woff2") format("woff2"),
+    url("/dk_liquid_embrace-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Min Round";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/min-round-webfont.woff2") format("woff2"),
+    url("/min-round-webfont.woff") format("woff");
+}

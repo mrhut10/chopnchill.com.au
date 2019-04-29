@@ -14,3 +14,20 @@
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+.hero {
+  min-height: 70vh;
+}
+
+.squiggle {
+  background-image: url(/static/sqiggle.svg);
+  background-position: 100% 100%;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  min-width: 15px;
+  position: relative;
+  width: 4px;
+}

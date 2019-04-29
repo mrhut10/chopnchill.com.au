@@ -59,7 +59,7 @@ export default class ContactForm extends React.Component {
               Name:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-brand-blue"
               id="name"
               name="name"
               onChange={this.handleChange}
@@ -76,7 +76,7 @@ export default class ContactForm extends React.Component {
               Email address:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-brand-blue"
               id="email"
               name="email"
               onChange={this.handleChange}
@@ -93,7 +93,7 @@ export default class ContactForm extends React.Component {
               Phone number:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-brand-blue"
               id="phone"
               name="phone"
               onChange={this.handleChange}
@@ -109,7 +109,7 @@ export default class ContactForm extends React.Component {
               Message:
             </span>
             <textarea
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-brand-blue"
               id="message"
               name="message"
               onChange={this.handleChange}
