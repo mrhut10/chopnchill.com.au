@@ -1,21 +1,38 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
 const EventsSection = () => (
   <StaticQuery
     query={graphql`
-      query EventSectionQuery {
+      fragment eventsSectionFluidImage on File {
+        childImageSharp {
+          fluid(maxWidth: 256) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      query EventsSectionQuery {
         site {
           siteMetadata {
             email
           }
+        }
+        birthdays: file(relativePath: { eq: "birthdays.jpg" }) {
+          ...eventsSectionFluidImage
+        }
+        babyShowers: file(relativePath: { eq: "baby-showers.jpg" }) {
+          ...eventsSectionFluidImage
+        }
+        specialFunctions: file(relativePath: { eq: "special-functions.jpg" }) {
+          ...eventsSectionFluidImage
         }
       }
     `}
     render={data => (
       <section className="mb-24">
         <div className="max-w-lg mx-auto py-12 text-xl">
-          <h2 className="font-display text-6xl text-center">
+          <h2 className="font-display leading-none mb-6 text-6xl text-center">
             Join Us For Your Next Event
           </h2>
           <p>
@@ -33,17 +50,29 @@ const EventsSection = () => (
           </p>
         </div>
         <div className="flex items-center sm:justify-center overflow-x-auto max-w-2xl mx-auto w-full">
-          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
-            Birthdays
+          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
+            <Img
+              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              fluid={data.birthdays.childImageSharp.fluid}
+            />
+            <span className="absolute">Birthdays</span>
           </div>
-          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
-            Baby Showers
+          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
+            <Img
+              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              fluid={data.babyShowers.childImageSharp.fluid}
+            />
+            <span className="absolute">Baby Showers</span>
           </div>
-
-          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 text-center text-white w-32 rounded-full">
-            Special
-            <br />
-            Functions
+          <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
+            <Img
+              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              fluid={data.specialFunctions.childImageSharp.fluid}
+            />
+            <span className="absolute">
+              Special <br />
+              Functions
+            </span>
           </div>
         </div>
       </section>
