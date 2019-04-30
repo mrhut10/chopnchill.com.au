@@ -9,6 +9,9 @@ const Footer = () => (
         site {
           siteMetadata {
             title
+            phone
+            phoneFormatted
+            email
           }
         }
       }
