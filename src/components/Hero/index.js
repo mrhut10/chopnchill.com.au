@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { FaFacebookSquare, FaInstagram, FaPhoneSquare } from 'react-icons/fa';
-import Header from '../Header';
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import Image from './Image';
 import Logo from '../../images/logo.png';
 
@@ -28,15 +27,11 @@ const Hero = () => (
         </div>
         <div className="absolute flex top-0 left-0 right-0 items-center justify-between px-6 py-4 text-white uppercase">
           <div>
-            <a
-              className="hidden sm:block"
-              href={`tel:${data.site.siteMetadata.phone}`}
-            >
+            <a href={`tel:${data.site.siteMetadata.phone}`}>
               Call {data.site.siteMetadata.phoneFormatted}
             </a>
-            <FaPhoneSquare className="block sm:hidden" />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center relative z-10">
             <nav>
               <a className="mx-2" href="/menu">
                 Menu
