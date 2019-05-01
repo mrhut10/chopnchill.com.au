@@ -24,14 +24,41 @@ body {
 }
 
 .squiggle {
-  background-image: url(/static/sqiggle.svg);
-  background-position: 100% 100%;
-  background-repeat: repeat-y;
-  background-size: 100% auto;
-  display: flex;
-  flex: 1;
-  height: 100%;
-  min-width: 15px;
-  position: relative;
-  width: 4px;
+  background-size: 8px;
+  @apply pl-6;
+}
+
+.ramen {
+  shape-outside: circle(123px at 112px 52px);
+}
+
+.about-us {
+  shape-outside: polygon(
+    96.36% 54.54%,
+    106.78% 76.22%,
+    96.58% 103.26%,
+    74.25% 107.92%,
+    36.98% 93.93%,
+    3.25% 101.7%,
+    3.79% 0.19%,
+    85.72% -0.16%,
+    95.81% 21.18%,
+    86.43% 39.29%,
+    92.47% 41.88%
+  );
+}
+
+@responsive {
+  .xscroll-on {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      white 10px,
+      white 90%,
+      transparent
+    );
+  }
+  .xscroll-off {
+    mask-image: none;
+  }
 }
