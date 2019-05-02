@@ -1,14 +1,8 @@
 import React from 'react';
-import Footer from '../components/Footer';
 
-import '../css/fonts.css';
-import '../css/tailwind.css';
-import '../css/typography.css';
-import '../css/global.css';
-
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
-import Header from '../components/Header';
 import MenuSection from '../components/MenuSection';
 import AboutSection from '../components/AboutSection';
 import EventsSection from '../components/EventsSection';
@@ -17,20 +11,33 @@ import MapSection from '../components/MapSection';
 import Banner from '../components/Banner';
 
 const IndexPage = () => (
-  <div className="antialiased flex flex-col font-sans leading-relaxed text-brand-blue w-full">
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+  <>
     <Hero />
-    <Header />
-    <main className="bg-white flex-1 mx-auto w-full">
-      <MenuSection />
-      <AboutSection />
-      <Banner>Indoors. Outdoors. Doggo Friendly. Call to Book a Table.</Banner>
-      <EventsSection />
-      <ContactSection />
-      <MapSection />
-    </main>
-    <Footer />
-  </div>
+    <Layout>
+      <SEO
+        title="Home"
+        keywords={[
+          `Chop 'n Chill`,
+          `Chop and Chill`,
+          `Asian food`,
+          `Burgers`,
+          `Bar`,
+          `Grill`,
+          `restaurant,`,
+        ]}
+      />
+      <main className="bg-white flex-1 mx-auto w-full">
+        <MenuSection />
+        <AboutSection />
+        <Banner>
+          Indoors. Outdoors. Doggo Friendly. Call to Book a Table.
+        </Banner>
+        <EventsSection />
+        <ContactSection />
+        <MapSection />
+      </main>
+    </Layout>
+  </>
 );
 
 export default IndexPage;
