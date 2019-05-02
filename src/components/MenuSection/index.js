@@ -33,7 +33,7 @@ const MenuSection = () => (
     render={data => (
       <section className="max-w-5xl mx-auto overflow-x-hidden pb-12 pt-6 px-4 relative">
         <div
-          className="squiggle bg-repeat-y pl-4 ml-12 sm:pl-0"
+          className="squiggle bg-repeat-y sm:ml-12 pl-4 sm:pl-12"
           style={{
             backgroundImage: `url(${Squiggle})`,
           }}
