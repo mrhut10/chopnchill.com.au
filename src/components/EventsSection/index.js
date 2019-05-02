@@ -32,8 +32,9 @@ const EventsSection = () => (
     render={data => (
       <section className="mb-24">
         <div className="max-w-lg mx-auto py-12 text-xl">
-          <h2 className="font-display leading-none mb-6 text-6xl text-center">
-            Join Us For Your Next Event
+          <h2 className="font-display leading-none mb-6 text-5xl text-center uppercase">
+            Join Us For <br />
+            Your Next Event
           </h2>
           <p>
             Whether it's a corporate function, or a special occasion, our
@@ -52,21 +53,21 @@ const EventsSection = () => (
         <div className="flex items-center sm:justify-center overflow-x-auto max-w-2xl mx-auto w-full">
           <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
             <Img
-              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              className="h-full opacity-50 rounded-full w-full"
               fluid={data.birthdays.childImageSharp.fluid}
             />
             <span className="absolute">Birthdays</span>
           </div>
           <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
             <Img
-              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              className="h-full opacity-50 rounded-full w-full"
               fluid={data.babyShowers.childImageSharp.fluid}
             />
             <span className="absolute">Baby Showers</span>
           </div>
           <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-4 overflow-hidden relative rounded-full text-center text-white w-32">
             <Img
-              className="absolute min-h-full inset-0 opacity-50 min-w-full"
+              className="h-full opacity-50 rounded-full w-full"
               fluid={data.specialFunctions.childImageSharp.fluid}
             />
             <span className="absolute">
