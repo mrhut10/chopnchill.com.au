@@ -72,8 +72,12 @@ const Header = () => (
             Call {data.site.siteMetadata.phoneFormatted}
           </a>
           <div className="flex px-6 py-2">
-            <FaInstagram className="mr-1" />
-            <FaFacebookSquare className="" />
+            <a className="mr-1" href={data.site.siteMetadata.instagram}>
+              <FaInstagram />
+            </a>
+            <a href={data.site.siteMetadata.facebook}>
+              <FaFacebookSquare />
+            </a>
           </div>
         </nav>
       </header>
