@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import Image from './Image';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo-portrait.svg';
 
 const Hero = () => (
   <StaticQuery
@@ -55,7 +55,7 @@ const Hero = () => (
           <div className="max-w-sm mx-auto">
             <h1 className="font-display leading-none mb-8 text-white text-6xl">
               <img
-                className="px-12 w-auto"
+                className="px-12 w-full"
                 src={Logo}
                 alt={data.site.siteMetadata.title}
               />
