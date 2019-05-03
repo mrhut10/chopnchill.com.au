@@ -24,7 +24,27 @@ body {
 }
 
 .squiggle {
+  background-image: url("../images/sqiggle.svg");
+  background-repeat: repeat-y;
   background-size: 8px;
+}
+
+@responsive {
+  .footer-squiggle {
+    animation: animatedBackground 5s linear infinite;
+    background-image: url("../images/sqiggle-footer.svg");
+    background-repeat: repeat-y;
+    background-size: 8px;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 .ramen {
