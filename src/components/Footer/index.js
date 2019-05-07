@@ -23,13 +23,13 @@ const Footer = () => (
     render={data => (
       <footer>
         <div className="bg-brand-blue flex flex-wrap leading-tight px-6 py-10 relative text-white">
-          <div className="flex flex-col items-center mb-6 px-3 w-full sm:w-1/4">
+          <div className="sm:footer-squiggle flex flex-col items-center pb-6 pl-3 pr-6 w-full sm:w-1/4">
             <h3 className="font-display mb-4 text-2xl tracking-wider uppercase">
               We're <br />
               Very Social
             </h3>
             <p>Follow us to keep updated</p>
-            <p className="flex">
+            <p className="flex flex-wrap">
               <a
                 className="flex items-center mr-2"
                 href={data.site.siteMetadata.instagram}
@@ -46,7 +46,7 @@ const Footer = () => (
               </a>
             </p>
           </div>
-          <div className="flex flex-col items-center mb-6 px-3 w-full sm:w-1/4">
+          <div className="flex flex-col items-center pb-6 px-3 w-full sm:w-1/4">
             <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
               Contact
             </h3>
@@ -64,7 +64,7 @@ const Footer = () => (
               <a href="https://m.me/chopandchill">Message Us</a>
             </p>
           </div>
-          <div className="flex flex-col items-center mb-6 px-3 w-full sm:w-1/4">
+          <div className="flex flex-col items-center pb-6 px-3 w-full sm:w-1/4">
             <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
               Hours
             </h3>
@@ -80,7 +80,7 @@ const Footer = () => (
             </p>
             <p>Breakfast, Lunch</p>
           </div>
-          <div className="flex flex-col items-center mb-6 px-3 w-full sm:w-1/4">
+          <div className="flex flex-col items-center pb-6 px-3 w-full sm:w-1/4">
             <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
               Navigation
             </h3>
