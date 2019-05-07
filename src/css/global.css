@@ -24,7 +24,7 @@ body {
 }
 
 .squiggle {
-  background-image: url("../images/sqiggle.svg");
+  background-image: url('../images/sqiggle.svg');
   background-repeat: repeat-y;
   background-size: 8px;
 }
@@ -32,7 +32,7 @@ body {
 @responsive {
   .footer-squiggle {
     animation: animatedBackground 5s linear infinite;
-    background-image: url("../images/sqiggle-footer.svg");
+    background-image: url('../images/sqiggle-footer.svg');
     background-repeat: repeat-y;
     background-size: 8px;
   }
