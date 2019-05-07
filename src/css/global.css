@@ -23,18 +23,18 @@ body {
   min-height: 70vh;
 }
 
-.squiggle {
-  background-image: url('../images/sqiggle.svg');
-  background-repeat: repeat-y;
-  background-size: 8px;
-}
-
 @responsive {
+  .squiggle {
+    background-image: url('../images/sqiggle.svg');
+    background-repeat: repeat-y;
+    background-size: 6px;
+  }
+
   .footer-squiggle {
     animation: animatedBackground 5s linear infinite;
     background-image: url('../images/sqiggle-footer.svg');
     background-repeat: repeat-y;
-    background-size: 8px;
+    background-size: 6px;
   }
 }
 
@@ -131,4 +131,20 @@ body {
     @apply order-3;
     @apply inset-0;
   }
+}
+
+.tab-list {
+  writing-mode: vertical-rl;
+  @apply border-brand-blue;
+  @apply border-r-2;
+}
+.tab-list-item:first-child,
+.tab-list-item:last-child {
+  @apply border-b-2;
+}
+
+.tab-list-active {
+  @apply bg-brand-blue;
+  @apply text-white;
+  @apply border-brand-blue;
 }
