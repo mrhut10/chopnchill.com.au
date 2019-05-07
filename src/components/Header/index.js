@@ -28,7 +28,7 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header className="bg-brand-blue sm:flex items-center leading-none text-white top-0 relative sticky w-full z-50">
+      <header className="bg-brand-blue sm:flex items-center leading-none text-white top-0 relative shadow sticky w-full z-50">
         <div className="relative">
           <div className="flex justify-between w-full">
             <Link
