@@ -9,7 +9,7 @@ import '../../css/typography.css';
 import '../../css/global.css';
 
 const Layout = ({ children }) => (
-  <div className="antialiased flex flex-col font-sans leading-relaxed text-brand-blue w-full">
+  <div className="antialiased flex flex-col font-sans leading-relaxed min-h-screen text-brand-blue w-full">
     <Header />
     <main className="bg-white flex-1 mx-auto w-full">{children}</main>
     <Footer />
