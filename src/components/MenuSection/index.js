@@ -32,7 +32,7 @@ const MenuSection = () => (
     render={data => (
       <section className="max-w-5xl mx-auto overflow-hidden pb-12 pt-6 px-4">
         <div className="max-w-3xl mr-auto relative">
-          <div className="squiggle sm:ml-12 pl-6 mt-6 sm:pl-12">
+          <div className="sm:ml-12 mt-6 sm:pl-12">
             <img
               className="ramen relative float-right -mt-24 -mr-10 lg:mr-0 right-0 top-0 w-56"
               src={Ramen}
