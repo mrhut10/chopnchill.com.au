@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Chop 'n Chill`,
     description: `Chop 'n Chill Bar & Grill Restaurant is a popular place to visit in Port Macquarie for great food situated on the Hasting River waterfront at Town Green. Enjoy a mix of East meets West cuisine from all over the world. We cater for the whole family including dogs.`,
-    email: `hello@phirannodesigns.com.au`, // used in GraphQL queries so address only needs to be entered in one place
+    email: `info@chopnchill.com.au`, // used in GraphQL queries so address only needs to be entered in one place
     phone: `0265839155`, // e.g. +61400000000
     phoneFormatted: `(02) 6583 9155`, // e.g. 0400 000 000
     siteUrl: `https://www.chopnchill.com.au`, // used for `gatsby-plugin-sitemap` to generate correct URLs
