@@ -55,10 +55,6 @@ const MenuSection = () => (
               <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-3 overflow-hidden relative rounded-full text-center text-white w-32">
                 <Img
                   className="h-32 opacity-50 overflow-hidden rounded-full w-32"
-                  imgStyle={{
-                    overflow: `hidden`,
-                    position: `relative !important`,
-                  }}
                   fluid={data.breakfast.childImageSharp.fluid}
                 />
                 <span className="absolute">Breakfast</span>
