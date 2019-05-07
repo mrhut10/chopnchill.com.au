@@ -26,16 +26,12 @@ const IndexPage = () => (
           `restaurant,`,
         ]}
       />
-      <main className="bg-white flex-1 mx-auto w-full">
-        <MenuSection />
-        <AboutSection />
-        <Banner>
-          Indoors. Outdoors. Doggo Friendly. Call to Book a Table.
-        </Banner>
-        <EventsSection />
-        <ContactSection />
-        <MapSection />
-      </main>
+      <MenuSection />
+      <AboutSection />
+      <Banner>Indoors. Outdoors. Doggo Friendly. Call to Book a Table.</Banner>
+      <EventsSection />
+      <ContactSection />
+      <MapSection />
     </Layout>
   </>
 );
