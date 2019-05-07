@@ -39,10 +39,10 @@ const MenuSection = () => (
               alt=""
             />
             <div className="mx-auto text-xl">
-              <div className="max-w-lg">
-                <h2 className="font-display leading-none mb-6 relative text-5xl text-center uppercase">
-                  Hungry?
-                </h2>
+              <h2 className="font-display leading-none mb-6 relative text-5xl text-center uppercase">
+                Hungry?
+              </h2>
+              <div className="leading-tight max-w-lg">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                   sequi maxime illum distinctio veritatis ad eos error odio non,

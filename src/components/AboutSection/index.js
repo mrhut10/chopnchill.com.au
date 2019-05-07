@@ -8,7 +8,7 @@ const AboutSection = () => (
   <section className="max-w-5xl mx-auto overflow-hidden pb-12 pt-6 px-4">
     <div className="max-w-3xl ml-auto relative">
       <div className="squiggle bg-right flex flex-wrap sm:flex-no-wrap sm:mr-12 pr-4 sm:pr-12">
-        <div className="about-us flex float-left mb-32 sm:mr-16 mx-auto pr-6 sm:w-64 z-10">
+        <div className="about-us flex float-left mb-32 sm:mr-16 -ml-4 mx-auto pr-6 sm:w-64 z-10">
           <img className="sausages" src={Sausages} alt="" />
           <img className="rosemary" src={Rosemary} alt="" />
           <img className="mortar-and-pestle" src={MortarAndPestle} alt="" />
@@ -17,7 +17,7 @@ const AboutSection = () => (
           <h2 className="font-display leading-none mb-6 text-5xl text-center uppercase">
             About Us
           </h2>
-          <div className="max-w-lg">
+          <div className="leading-tight max-w-lg">
             <p className="mb-4">
               Port Macquarie Restaurant Bar Chop 'n Chill was created out of a
               passion for delivering a relaxed dining experience in Port

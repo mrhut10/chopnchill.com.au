@@ -29,15 +29,17 @@ const ContactSection = () => (
               <h2 className="font-display leading-none mb-6 text-5xl text-center uppercase">
                 Contact Us
               </h2>
-              <p className="max-w-lg mb-4">
-                If you’d like to make a booking or have any questions about our
-                cakes and desserts, please call us on{' '}
-                <a href={`tel:${data.site.siteMetadata.phone}`}>
-                  {data.site.siteMetadata.phoneFormatted}
-                </a>{' '}
-                or complete the enquiry form below. We look forward to hearing
-                from you!
-              </p>
+              <div className="leading-tight max-w-lg mb-4">
+                <p>
+                  If you’d like to make a booking or have any questions about
+                  our cakes and desserts, please call us on{' '}
+                  <a href={`tel:${data.site.siteMetadata.phone}`}>
+                    {data.site.siteMetadata.phoneFormatted}
+                  </a>{' '}
+                  or complete the enquiry form below. We look forward to hearing
+                  from you!
+                </p>
+              </div>
               <h3 className="text-3xl uppercase">Enquiry</h3>
               <ContactForm />
             </div>
