@@ -23,7 +23,7 @@ const Footer = () => (
     render={data => (
       <footer>
         <div className="bg-brand-blue flex flex-wrap leading-tight px-6 py-10 relative text-white">
-          <div className="sm:footer-squiggle flex flex-col items-center pb-6 pl-3 pr-6 w-full sm:w-1/4">
+          <div className="footer-squiggle-horizontal sm:footer-squiggle flex flex-col items-center mb-10 sm:mb-0 pb-10 pl-3 pr-6 w-full sm:w-1/4">
             <h3 className="font-display mb-4 text-2xl tracking-wider uppercase">
               We're <br />
               Very Social

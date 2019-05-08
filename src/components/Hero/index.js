@@ -43,10 +43,10 @@ const Hero = () => (
                 Contact
               </a>
             </nav>
-            <a className="ml-1" href="{data.site.siteMetadata.instagram}">
+            <a className="ml-1" href={data.site.siteMetadata.instagram}>
               <FaInstagram />
             </a>
-            <a className="ml-1" href="{data.site.siteMetadata.facebook}">
+            <a className="ml-1" href={data.site.siteMetadata.facebook}>
               <FaFacebookSquare />
             </a>
           </div>
