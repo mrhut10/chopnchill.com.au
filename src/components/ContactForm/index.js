@@ -59,7 +59,7 @@ export default class ContactForm extends React.Component {
               Your name (required)
             </span>
             <input
-              className="appearance-none bg-gray-200 hover:bg-gray-100 border border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
+              className="appearance-none bg-gray-200 hover:bg-gray-100 border-2 border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
               id="name"
               name="name"
               onChange={this.handleChange}
@@ -76,7 +76,7 @@ export default class ContactForm extends React.Component {
               Your email (required)
             </span>
             <input
-              className="appearance-none bg-gray-200 hover:bg-gray-100 border border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
+              className="appearance-none bg-gray-200 hover:bg-gray-100 border-2 border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
               id="email"
               name="email"
               onChange={this.handleChange}
@@ -93,7 +93,7 @@ export default class ContactForm extends React.Component {
               Subject
             </span>
             <input
-              className="appearance-none bg-gray-200 hover:bg-gray-100 border border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
+              className="appearance-none bg-gray-200 hover:bg-gray-100 border-2 border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
               id="subject"
               name="subject"
               onChange={this.handleChange}
@@ -109,7 +109,7 @@ export default class ContactForm extends React.Component {
               Your message
             </span>
             <textarea
-              className="appearance-none bg-gray-200 hover:bg-gray-100 border border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
+              className="appearance-none bg-gray-200 hover:bg-gray-100 border-2 border-gray-200 leading-tight px-3 py-2 rounded-none text-brand-blue w-full focus:outline-none focus:border-brand-blue"
               id="message"
               name="message"
               onChange={this.handleChange}
@@ -122,7 +122,7 @@ export default class ContactForm extends React.Component {
         <div className="flex items-center justify-between mb-6">
           {/* Submit */}
           <button
-            className="border border-brand-blue cursor-pointer font-semibold leading-none px-4 py-2 text-brand-blue text-xs tracking-wide uppercase"
+            className="border-2 border-brand-blue cursor-pointer font-semibold leading-none px-4 py-2 text-brand-blue text-xs tracking-wide uppercase"
             type="submit"
           >
             Send

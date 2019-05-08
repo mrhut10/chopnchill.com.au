@@ -27,18 +27,20 @@ const ContactSection = () => (
                 alt=""
               />
               <div className="squiggle bg-left leading-tight max-w-lg mb-4 mr-auto sm:ml-12 pl-6 sm:pl-12 pr-4">
-                <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
-                  Contact Us
-                </h2>
-                <p>
-                  If you’d like to make a booking or have any questions about
-                  our cakes and desserts, please call us on{' '}
-                  <a href={`tel:${data.site.siteMetadata.phone}`}>
-                    {data.site.siteMetadata.phoneFormatted}
-                  </a>{' '}
-                  or complete the enquiry form below. We look forward to hearing
-                  from you!
-                </p>
+                <div className="mb-4">
+                  <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
+                    Contact Us
+                  </h2>
+                  <p>
+                    If you’d like to make a booking or have any questions about
+                    our cakes and desserts, please call us on{' '}
+                    <a href={`tel:${data.site.siteMetadata.phone}`}>
+                      {data.site.siteMetadata.phoneFormatted}
+                    </a>{' '}
+                    or complete the enquiry form below. We look forward to
+                    hearing from you!
+                  </p>
+                </div>
                 <h3 className="text-3xl uppercase">Enquiry</h3>
                 <ContactForm />
               </div>
