@@ -51,7 +51,7 @@ const MenuSection = () => (
                 </p>
               </div>
             </div>
-            <div className="xscroll-on lg:xscroll-off flex items-center -ml-4 overflow-x-auto mt-8">
+            <div className="flex items-center -ml-4 overflow-x-auto mt-8">
               <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mx-3 overflow-hidden relative rounded-full text-center text-white w-32">
                 <Img
                   className="h-32 opacity-50 overflow-hidden rounded-full w-32"
