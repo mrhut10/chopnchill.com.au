@@ -3,7 +3,6 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
 import EventsDesktopImage from '../../images/events-desktop.svg';
-// import Margarita from '../../images/margarita.svg';
 
 const EventsSection = () => (
   <StaticQuery
@@ -70,22 +69,22 @@ const EventsSection = () => (
               </div>
             </div>
           </div>
-          <div className="flex items-center overflow-x-auto mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4">
-            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
+          <div className="flex items-center overflow-x-auto ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4 py-6">
+            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none ml-auto mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
               <Img
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.birthdays.childImageSharp.fluid}
               />
               <span className="absolute">Birthdays</span>
             </div>
-            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
+            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
               <Img
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.babyShowers.childImageSharp.fluid}
               />
               <span className="absolute">Baby Showers</span>
             </div>
-            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mb-8 mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
+            <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
               <Img
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.specialFunctions.childImageSharp.fluid}
