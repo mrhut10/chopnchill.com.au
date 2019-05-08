@@ -26,13 +26,13 @@ const Hero = () => (
           <Image />
         </div>
         <div className="absolute flex top-0 left-0 right-0 items-center justify-between px-6 py-4 text-white uppercase">
-          <div>
+          <div className="hidden sm:block">
             <a href={`tel:${data.site.siteMetadata.phone}`}>
               Call {data.site.siteMetadata.phoneFormatted}
             </a>
           </div>
-          <div className="flex items-center relative z-10">
-            <nav>
+          <div className="flex items-center relative w-full sm:w-auto z-10">
+            <nav className="mx-auto">
               <a className="mx-2" href="/menu">
                 Menu
               </a>
