@@ -17,19 +17,19 @@ const ContactSection = () => (
       }
     `}
     render={data => (
-      <section className="max-w-5xl mx-auto overflow-hidden pb-12 pt-6 px-4">
-        <div className="max-w-3xl ml-auto relative">
-          <div className="squiggle sm:ml-12 pl-4 sm:pl-12">
-            <img
-              className="relative float-right mt-12 right-0 top-0 w-56"
-              src={CheeseBoard}
-              alt=""
-            />
-            <div className="mx-auto text-xl">
-              <h2 className="font-display leading-none mb-6 text-5xl text-center uppercase">
-                Contact Us
-              </h2>
-              <div className="leading-tight max-w-lg mb-4">
+      <section className="max-w-5xl mx-auto overflow-hidden pb-12 pl-4">
+        <div className="max-w-3xl mr-auto">
+          <div className="flex items-start">
+            <div className="text-xl w-full">
+              <img
+                className="sm:hidden mb-6 mx-auto w-full"
+                src={CheeseBoard}
+                alt=""
+              />
+              <div className="squiggle bg-left leading-tight max-w-lg mb-4 mr-auto sm:ml-12 pl-6 sm:pl-12 pr-4">
+                <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
+                  Contact Us
+                </h2>
                 <p>
                   If you’d like to make a booking or have any questions about
                   our cakes and desserts, please call us on{' '}
@@ -39,10 +39,15 @@ const ContactSection = () => (
                   or complete the enquiry form below. We look forward to hearing
                   from you!
                 </p>
+                <h3 className="text-3xl uppercase">Enquiry</h3>
+                <ContactForm />
               </div>
-              <h3 className="text-3xl uppercase">Enquiry</h3>
-              <ContactForm />
             </div>
+            <img
+              className="hidden sm:block ml-6 w-64"
+              src={CheeseBoard}
+              alt=""
+            />
           </div>
         </div>
       </section>

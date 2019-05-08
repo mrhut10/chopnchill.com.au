@@ -1,24 +1,27 @@
 import React from 'react';
 
-import Sausages from '../../images/sausages.svg';
-import Rosemary from '../../images/rosemary.svg';
-import MortarAndPestle from '../../images/mortar-and-pestle.svg';
+import AboutDesktopImage from '../../images/about-desktop.svg';
 
 const AboutSection = () => (
-  <section className="max-w-5xl mx-auto overflow-hidden pb-12 pt-6 px-4">
-    <div className="max-w-3xl ml-auto relative">
-      <div className="squiggle bg-right flex flex-wrap sm:flex-no-wrap sm:mr-12 pr-4 sm:pr-12">
-        <div className="about-us flex float-left mb-32 sm:mr-16 -ml-4 mx-auto pr-6 sm:w-64 z-10">
-          <img className="sausages" src={Sausages} alt="" />
-          <img className="rosemary" src={Rosemary} alt="" />
-          <img className="mortar-and-pestle" src={MortarAndPestle} alt="" />
-        </div>
-        <div className="ml-auto relative text-xl z-10">
-          <h2 className="font-display leading-none mb-6 text-5xl text-center uppercase">
-            About Us
-          </h2>
-          <div className="leading-tight max-w-lg">
-            <p className="mb-4">
+  <section className="max-w-5xl mx-auto overflow-hidden pb-12 pr-4">
+    <div className="max-w-3xl ml-auto">
+      <div className="flex items-start">
+        <img
+          className="hidden sm:block mr-6 w-64"
+          src={AboutDesktopImage}
+          alt=""
+        />
+        <div className="text-xl w-full">
+          <img
+            className="sm:hidden mb-6 mx-auto w-full"
+            src={AboutDesktopImage}
+            alt=""
+          />
+          <div className="squiggle bg-right leading-tight max-w-lg mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4">
+            <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
+              About Us
+            </h2>
+            <p>
               Port Macquarie Restaurant Bar Chop 'n Chill was created out of a
               passion for delivering a relaxed dining experience in Port
               Macquarie unlike any other. Showcasing a classic feel-good fare
