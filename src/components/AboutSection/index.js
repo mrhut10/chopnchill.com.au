@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AboutDesktopImage from '../../images/about-desktop.svg';
+import AboutMobileImage from '../../images/about-mobile.svg';
 
 const AboutSection = () => (
   <section className="max-w-5xl mx-auto overflow-hidden pb-12 pr-4">
@@ -14,7 +15,7 @@ const AboutSection = () => (
         <div className="text-xl w-full">
           <img
             className="sm:hidden mb-6 mx-auto w-full"
-            src={AboutDesktopImage}
+            src={AboutMobileImage}
             alt=""
           />
           <div className="squiggle bg-right leading-tight max-w-lg mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4">
