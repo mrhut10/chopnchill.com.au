@@ -28,7 +28,7 @@ class Tabs extends Component {
     } = this;
 
     return (
-      <div className="tabs flex p-4 w-full">
+      <div className="tabs flex max-w-3xl mx-auto p-4 w-full">
         <ol className="tab-list border-t flex">
           {children.map(child => {
             const { label } = child.props;
@@ -44,7 +44,7 @@ class Tabs extends Component {
           })}
         </ol>
         <div className="tab-content border-brand-blue border-b-2 border-r-2 border-t-2 flex flex-1 px-6 py-8 w-full">
-          <div className="sm:squiggle sm:pl-6">
+          <div className="sm:squiggle sm:pl-6 w-full">
             {children.map(child => {
               if (child.props.label !== activeTab) return undefined;
               return child.props.children;
