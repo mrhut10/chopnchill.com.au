@@ -82,3 +82,9 @@ body {
   @apply text-white;
   @apply border-brand-blue;
 }
+
+.extras-menu > li::before {
+  content: '›';
+  @apply float-left;
+  @apply mr-2;
+}
