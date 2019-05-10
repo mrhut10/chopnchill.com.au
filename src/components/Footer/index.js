@@ -24,21 +24,21 @@ const Footer = () => (
       <footer>
         <div className="bg-brand-blue flex flex-wrap leading-tight px-6 py-10 relative text-white">
           <div className="footer-squiggle-horizontal sm:footer-squiggle flex flex-col items-center mb-10 sm:mb-0 pb-10 pl-3 pr-6 w-full sm:w-1/4">
-            <h3 className="font-display mb-4 text-2xl tracking-wider uppercase">
+            <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
               We're <br />
               Very Social
             </h3>
             <p>Follow us to keep updated</p>
-            <p className="flex flex-wrap">
+            <p className="flex flex-wrap justify-center">
               <a
-                className="flex items-center mr-2"
+                className="flex items-center justify-center mr-2"
                 href={data.site.siteMetadata.instagram}
               >
                 <FaInstagram className="mr-1" />
                 #chopnchill
               </a>
               <a
-                className="flex items-center"
+                className="flex items-center justify-center mr-2"
                 href={data.site.siteMetadata.facebook}
               >
                 <FaFacebookSquare className="mr-1" />
