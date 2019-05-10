@@ -55,7 +55,7 @@ const ToShare = () => (
     <MenuItem title="MIXED QUESADILLAS" price="19">
       <p>
         American style Quesadilla; one side filled with melted-Cheese ‘n Garlic;
-        the other with Smoked BBQ Brisket, Cheese-Melt, Jalapeño and Onion. Sour
+        the other with Smoked BBQ Brisket, Cheese-Melt, Jalapeno and Onion. Sour
         Cream on the side. + Avocado $4
       </p>
     </MenuItem>
@@ -69,8 +69,8 @@ const ToShare = () => (
       <p>
         Three warm Soft-flour Tortillas filled with your choice of Battered
         Fish, Smoked Pork, or Smoked Brisket. Served with Chinese Pickled
-        Vegetables, House-slaw and Red Onions. Finished with Siracha Mayonnaise,
-        Lemon ‘n Lime Wedges. + Avocado $4
+        Vegetables, House-slaw and Red Onions. Finished with Sriracha
+        Mayonnaise, Lemon ‘n Lime Wedges. + Avocado $4
       </p>
     </MenuItem>
     <MenuItem title="PULLED PORK SLIDERS" price="26.5">
