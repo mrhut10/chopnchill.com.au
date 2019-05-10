@@ -96,6 +96,32 @@ WITH HAM HOCKS, BACON OR SALMON"
     <MenuItem title="THE BIG BREKKY PLATTER FOR TWO OR MORE" price="XX">
       <p>Description to follow</p>
     </MenuItem>
+    <div className="border-2 border-brand-blue flex">
+      <div
+        className="font-bold font-display py-4 px-2 text-2xl text-center uppercase"
+        style={{ writingMode: `vertical-lr` }}
+      >
+        Extras
+      </div>
+      <div className="bg-brand-blue px-4 py-2 text-white w-full">
+        <ul style={{ columns: `12rem` }}>
+          <li>
+            <ul className="extras-menu footer-squiggle">
+              <li>Eggs of your choice $5</li>
+              <li>Smoked Salmon $6</li>
+              <li>Bacon $4</li>
+              <li>Mushrooms $4</li>
+            </ul>
+            <ul className="extras-menu">
+              <li>Smashed Avo $4</li>
+              <li>Grilled Tomatoes $3</li>
+              <li>Chilli Beans $4</li>
+              <li>Crispy Potatoes $4</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </>
 );
 
