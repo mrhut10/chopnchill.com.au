@@ -23,26 +23,18 @@ const AboutSection = () => (
               About Us
             </h2>
             <p>
-              Port Macquarie Restaurant Bar Chop 'n Chill was created out of a
-              passion for delivering a relaxed dining experience in Port
-              Macquarie unlike any other. Showcasing a classic feel-good fare
-              that's executed with a playful twist. The atmosphere at Chop 'n
-              Chill is infused with a relaxed beach style buzz, boasting
-              spacious indoor and outdoor dining areas, floor to ceiling
-              windows, and fabulous waterfront views. Let us fill your soul with
-              the perfect ambience, food, and place to unwind. Pop in for
-              breakfast, lunch, dinner, or any time in-between. If you're a
-              local, we want you to feel like you're on holiday. If you're on
-              holiday, we'd like you to enjoy this corner of our beautiful
-              seaside town.
-            </p>
-            <p>
-              For us, it's all about the party. Whatever type of party you
-              imagine, that's the type of party we'll create. Whether it's a
-              wedding or fundraiser, baby shower or 70th birthday party, we'll
-              attend to every detail, so that your dream event becomes a reality
-              worth remembering. We take care of the details so that you can
-              enjoy the event!
+              A love of the food hospitality industry along with extensive
+              researching of various cuisines around the world and a desire to
+              share their accumulated experiences and knowledge with people in
+              their home town are the main reasons behind Paul and Jacqueline
+              establishing the Chop 'n Chill concept. And it’s more than just
+              the food — a big part of the concept is what it offers people by
+              way of location — in the centre of town right on the Town Green;
+              spectacular views — across the Town Green and the beautiful
+              Hastings River; indoor/outdoor dining — in relaxing and pleasant
+              surrounds; kids play park — in full view from the restaurant. Chop
+              'n Chill is a destination that’s all about spending great times
+              with family and friends.
             </p>
           </div>
         </div>

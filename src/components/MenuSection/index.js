@@ -44,10 +44,17 @@ const MenuSection = () => (
               </h2>
               <div className="leading-tight max-w-lg">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  sequi maxime illum distinctio veritatis ad eos error odio non,
-                  consequuntur ab repellat id, expedita quae soluta facilis,
-                  accusamus necessitatibus pariatur.
+                  Combining the best of East and West in unique menus that
+                  playfully blend the fresh street-style of South East Asia with
+                  the hearty smoked-meat flavours of the Americas. With an
+                  imaginative Breakfast Menu, an extensive Lunch/Dinner Menu,
+                  plus separate Vegetarian/Vegan and Gluten Free Menus, we offer
+                  inclusive dining for everyone. In between meal times, we serve
+                  all styles of coffee and fragrant teas with a tempting “Wicked
+                  Cake Cabinet”. We have a fully stocked bar offering a wide
+                  selection of cocktails, wines, champagne, spirits, tap and
+                  bottled beer. Oh! And if you can’t stay, we have a “Takeout
+                  Menu” available too!
                 </p>
               </div>
             </div>

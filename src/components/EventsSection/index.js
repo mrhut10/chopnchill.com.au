@@ -53,10 +53,11 @@ const EventsSection = () => (
                   Your Next Event
                 </h2>
                 <p>
-                  Whether it's a corporate function, or a special occasion, our
-                  experienced staff will work with you to tailor an event that
-                  meets all of your needs and leaves a lasting impression on
-                  your guests.
+                  Something special coming up? We pride ourselves on turning any
+                  gathering in to a fun event and unforgettable celebration!
+                  We’re set up to cater for, Engagement Parties, Baby Showers,
+                  Birthday Parties and all kinds of Work Functions. Whether it’s
+                  a Budget or Gala event we’re always happy to talk to you!
                 </p>
                 <p>
                   <strong>

@@ -32,13 +32,13 @@ const ContactSection = () => (
                     Contact Us
                   </h2>
                   <p>
-                    If you’d like to make a booking or have any questions about
-                    our cakes and desserts, please call us on{' '}
+                    We are located on the Town Green overlooking the Hastings
+                    River, call us on 
                     <a href={`tel:${data.site.siteMetadata.phone}`}>
                       {data.site.siteMetadata.phoneFormatted}
-                    </a>{' '}
-                    or complete the enquiry form below. We look forward to
-                    hearing from you!
+                    </a>
+                     or complete the enquiry form below. Call or email with your
+                    questions and queries. We look forward to hearing from you!
                   </p>
                 </div>
                 <h3 className="text-3xl uppercase">Enquiry</h3>
