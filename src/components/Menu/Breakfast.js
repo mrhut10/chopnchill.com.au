@@ -106,7 +106,7 @@ WITH HAM HOCKS, BACON OR SALMON"
       <div className="bg-brand-blue px-4 py-2 text-white w-full">
         <ul style={{ columns: `12rem` }}>
           <li>
-            <ul className="extras-menu footer-squiggle">
+            <ul className="extras-menu sm:footer-squiggle">
               <li>Eggs of your choice $5</li>
               <li>Smoked Salmon $6</li>
               <li>Bacon $4</li>
