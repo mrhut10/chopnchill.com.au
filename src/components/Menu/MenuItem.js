@@ -7,7 +7,7 @@ const MenuItem = ({ title, children, price }) => (
       <h2 className="font-display sm:text-2xl uppercase">{title}</h2>
       {children}
     </div>
-    <div className="font-display sm:text-2xl">${price}</div>
+    <div className="font-display sm:text-xl">${price}</div>
   </div>
 );
 
