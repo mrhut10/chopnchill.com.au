@@ -46,7 +46,7 @@ const MenuPage = () => (
             style={{ minHeight: `50vh`, maxHeight: `18rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center max-w-3xl mx-auto p-4">
+          <div className="absolute flex inset-0 items-center max-w-3xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">Food</h1>
               <p>
