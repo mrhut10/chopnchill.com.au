@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -29,7 +29,7 @@ const MenuPage = () => (
     render={data => (
       <Layout>
         <SEO
-          title="Home"
+          title="Menu"
           keywords={[
             `Chop 'n Chill`,
             `Chop and Chill`,
