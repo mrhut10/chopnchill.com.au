@@ -7,8 +7,9 @@ import SEO from '../components/SEO';
 import Tabs from '../components/Menu/Tabs';
 import ToShare from '../components/Menu/ToShare';
 import OrNotToShare from '../components/Menu/OrNotToShare';
-import Drinks from '../components/Menu/Drinks';
 import Breakfast from '../components/Menu/Breakfast';
+import VeganVegitarian from '../components/Menu/VeganVegitarian';
+import Drinks from '../components/Menu/Drinks';
 
 const MenuPage = () => (
   <StaticQuery
@@ -65,11 +66,14 @@ const MenuPage = () => (
           <div label="Or Not To Share?">
             <OrNotToShare />
           </div>
-          <div label="Drinks">
-            <Drinks />
-          </div>
           <div label="Breakfast">
             <Breakfast />
+          </div>
+          <div label="Vegan / Vegatarian">
+            <VeganVegitarian />
+          </div>
+          <div label="Drinks">
+            <Drinks />
           </div>
         </Tabs>
       </Layout>
