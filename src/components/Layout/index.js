@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -17,5 +18,9 @@ const Layout = ({ children }) => (
     <Footer />
   </div>
 );
+
+Layout.propTypes = {
+  children: propTypes.arrayOf(propTypes.element),
+};
 
 export default Layout;

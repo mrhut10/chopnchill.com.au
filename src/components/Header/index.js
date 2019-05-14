@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import propTypes from 'prop-types';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
 import LogoLandscape from '../../images/logo-landscape.svg';
@@ -85,10 +86,15 @@ const Header = () => (
   />
 );
 
-const NavLink = props => (
-  <Link to={props.link} className="block px-6 sm:px-2 py-2">
-    {props.title}
+const NavLink = ({ link, title }) => (
+  <Link to={link} className="block px-6 sm:px-2 py-2">
+    {title}
   </Link>
 );
+
+NavLink.propTypes = {
+  link: propTypes.string,
+  title: propTypes.string,
+};
 
 export default Header;

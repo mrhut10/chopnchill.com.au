@@ -36,8 +36,8 @@ const ContactSection = () => (
                     River, call us on 
                     <a href={`tel:${data.site.siteMetadata.phone}`}>
                       {data.site.siteMetadata.phoneFormatted}
-                    </a>
-                     or complete the enquiry form below. Call or email with your
+                    </a>{' '}
+                    or complete the enquiry form below. Call or email with your
                     questions and queries. We look forward to hearing from you!
                   </p>
                 </div>

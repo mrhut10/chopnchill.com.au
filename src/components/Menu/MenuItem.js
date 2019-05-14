@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 const MenuItem = ({ title, children, price }) => (
   <div className="sm:flex justify-between mb-4">
@@ -12,9 +12,9 @@ const MenuItem = ({ title, children, price }) => (
 );
 
 MenuItem.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.object,
-  price: PropTypes.string,
+  title: propTypes.string,
+  children: propTypes.object,
+  price: propTypes.string,
 };
 
 export default MenuItem;

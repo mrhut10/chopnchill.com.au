@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 import MenuItem from './MenuItem';
 
@@ -159,6 +159,11 @@ const Heading = ({ title, subtitle }) => (
   </div>
 );
 
+Heading.propTypes = {
+  title: propTypes.string,
+  subtitle: propTypes.string,
+};
+
 const Drink = ({ title, price }) => (
   <div className="flex flex-wrap justify-between leading-none mb-2">
     <div className="flex-1 max-w-lg pr-2 sm:pr-12">
@@ -169,8 +174,8 @@ const Drink = ({ title, price }) => (
 );
 
 Drink.propTypes = {
-  title: PropTypes.string,
-  price: PropTypes.string,
+  title: propTypes.string,
+  price: propTypes.string,
 };
 
 export default Drinks;
