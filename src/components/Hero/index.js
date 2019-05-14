@@ -32,7 +32,7 @@ const Hero = () => (
             </a>
           </div>
           <div className="flex items-center relative w-full sm:w-auto z-10">
-            <nav className="mx-auto">
+            <nav className="mr-auto sm:mx-auto">
               <a className="mx-2" href="/menu">
                 Menu
               </a>
