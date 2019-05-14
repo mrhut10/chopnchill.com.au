@@ -43,7 +43,7 @@ const MenuPage = () => (
         <div className="bg-brand-blue relative">
           <Img
             className="opacity-75"
-            style={{ minHeight: `50vh`, maxHeight: `18rem` }}
+            style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
           <div className="absolute flex inset-0 items-center max-w-3xl mx-auto p-8">
