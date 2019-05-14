@@ -4,9 +4,15 @@ import PropTypes from 'prop-types';
 import MenuItem from './MenuItem';
 
 const Drinks = () => (
-  <>
-    <h3 className="font-display sm:text-4xl uppercase">Beers and Cider</h3>
-    <h4 className="font-display mb-4 sm:text-3xl uppercase">By The Bottle</h4>
+  <div className="sm:pl-4">
+    <div className="relative">
+      <h3 className="sm:absolute bg-white font-display leading-none sm:left-0 mb-4 sm:-ml-12 sm:-mt-2 sm:py-2 text-2xl text-center top-0 uppercase sm:vertical sm:whitespace-no-wrap">
+        Beers and Ciders
+      </h3>
+    </div>
+    <h4 className="font-display leading-none mb-2 mt-4 sm:mt-0 sm:text-2xl uppercase">
+      By The Bottle
+    </h4>
     <Drink title="Hahn Premium Light" price="6" />
     <Drink title="Pacific Radler" price="5" />
     <Drink title="XXXX Summer Bright" price="7" />
@@ -19,10 +25,10 @@ const Drinks = () => (
     <Drink title="Ginger Beer" price="8" />
     <Drink title="Rekorderlig Ciders" price="8" />
     <Drink title="Long Point Ciders" price="8" />
-    <Drink title="BUCKET OF CORONA (5)" price="30" />
-    <h3 className="font-display mb-4 mt-8 sm:text-3xl uppercase">
+    <Drink title="Bucket of Corona (5)" price="30" />
+    <h4 className="font-display leading-none mb-2 mt-4 sm:text-2xl uppercase">
       On Tap (Middy and Pints)
-    </h3>
+    </h4>
     <Drink title="XXXX GOLD" price="6.5" />
     <Drink title="Tooheys New" price="7" />
     <Drink title="Tooheys Old" price="7" />
@@ -36,48 +42,129 @@ const Drinks = () => (
     <Drink title="5 Seeds Cider" price="7.5" />
     <Drink title="Furphy Refreshing Ale" price="7.5" />
     <Drink title="Canadian Club &amp; Dry" price="9.5" />
-    <h3 className="font-display mb-4 mt-8 sm:text-3xl uppercase">
+    <div className="relative">
+      <h3 className="sm:absolute bg-white font-display sm:left-0 -mb-8 sm:mb-0 sm:-ml-16 mt-8 sm:pl-2 sm:py-2 text-2xl text-center top-0 uppercase sm:vertical sm:whitespace-no-wrap">
+        Wine Time
+      </h3>
+    </div>
+    <Heading title="White&nbsp;Wine" subtitle="Glass | Bottle" />
+    <MenuItem title="The Anchorage Semillon Sauvignon Blanc" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. Lifted fruit salad
+      flavours, distinctive herbaceous and tropical characters followed by
+      delicate citrus notes
+    </MenuItem>
+    <MenuItem title="Studio Series Chardonnay" price="8 | $35">
+      <span className="uppercase">South Australia</span>. White peach, citrus
+      and melon flavours accentuated by a savour oak nose
+    </MenuItem>
+    <MenuItem title="Stonegate Sauvignon Blanc" price="8 | $35">
+      <span className="uppercase">South Australia</span>. Clean Crisp Flavours
+      Of Tropical Fruit With A Light Herbaceous Bouquet
+    </MenuItem>
+    <MenuItem title="Mondiale Marlbourough Sauvigon Blanc" price="9 | $40">
+      <span className="uppercase">South Island New Zealand</span>. Delicious
+      Combination Of Clean Herbaceous Character And Light Tropical Piquancy
+    </MenuItem>
+    <MenuItem title="La Bossa Pinot Grigio" price="8 | $35">
+      <span className="uppercase">King Valley Victoria</span>. Crunchy Pear
+      Taste Offering A MidPalate Balance And A Clean Finish
+    </MenuItem>
+    <MenuItem title="Ringmaster Riesling" price="8.5 | $40">
+      <span className="uppercase">Clare Valley</span>. Our Number One Seller.
+      Floral With Limes, Lemons And Green Apples. Mouth Filling Citrus Flavours
+      and a Zesty Clean Finish
+    </MenuItem>
+    <MenuItem title="Angove Family Crest Chardonnay" price="8.5 | $40">
+      <span className="uppercase">Adelaide Hills</span>. An Aroma Of Cantaloupe,
+      White Peach, Lemon And Smoky French Oak. A Delightful Clean Finish
+    </MenuItem>
+    <MenuItem title="Sugar And Spice Moscato" price="8.5 | $40">
+      <span className="uppercase">South Australia</span>. Lightly Carbonated
+      With Robust Mango, Lychee And Pear Flavours
+    </MenuItem>
+    <Heading title="Sparkling" subtitle="Glass | Bottle" />
+    <MenuItem title="Sparkling Angove Organic Brut Cuvee" price="8 | $36">
+      <span className="uppercase">South Australia</span>. Crisp And Clean With
+      Subtle Nuttiness, Ripe Citrus And Nashi Pear
+    </MenuItem>
+    <MenuItem title="Villa Jolanda Prosecco" price="8 | $36">
+      <span className="uppercase">Italy</span>. Clean With Lively Aromatic Apple
+      And Pear Aromas. Light And Well Balanced
+    </MenuItem>
+    <Heading title="Champagne" subtitle="Bottle" />
+    <MenuItem title="Nicolas Feuillatte Brut Reserve Champagne NV" price="99">
+      <span className="uppercase">France</span>. An Exceptional French Champagne
+      Presented With All The Style And Elegance That Comes From France
+    </MenuItem>
+    <MenuItem title="Taittinger Brut Réserve Champagne NV" price="120">
+      <span className="uppercase">France</span>. Well-Balance And Easy To Drink.
+      Smoothly Textured With Delicate Fruit Flavours and Subtle Toasty Yeast
+      Characters
+    </MenuItem>
+    <Heading title="Red Wine" subtitle="Glass | Bottle" />
+    <MenuItem title="The Anchorage Cabernet Merlot" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. Ripe, Fruity and
+      Voluptuous. Perfectly Interwined With Subtle Oak Influences and a Soft
+      juicy finish
+    </MenuItem>
+    <MenuItem title="La Bossa Cabernet Sauvignon" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. Cherry And Black Fruit
+      Aromas Enhanced By Subtle, Minty Tones On The Palate
+    </MenuItem>
+    <MenuItem title="Rhythm &amp; Rhyme Shiraz" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. A Rich Red Of Cherry
+      And Plum Fruits, Spice And A Hink Of Oak, Complimented With Fine Soft
+      Tannins
+    </MenuItem>
+    <MenuItem title="Angove McLaren Vale Shiraz" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. Upfront Pepper, Red
+      Cherry & Black Chocolate characteristics Accompanied By a Soft Raspberry
+      Presence
+    </MenuItem>
+    <MenuItem title="Duck Shoot Pinot Noir" price="7.5 | $32">
+      <span className="uppercase">Yarra Valley</span>. Aromas Of Strawberry And
+      Forest Floor. Soft And Rich With Silky Pinot Tannin
+    </MenuItem>
+    <MenuItem title="Alternatus Grenache" price="7.5 | $32">
+      <span className="uppercase">McLaren Vale</span>. Spiced Plum, Raspberry
+      And Cherry Fruit Flavours With Perfumed And Supple Medium Bodied Palate
+    </MenuItem>
+    <MenuItem title="Schild Merlot" price="7.5 | $32">
+      <span className="uppercase">Barossa Valley</span>. Intense Aromas Of Dark
+      Plum With Suggestion Of Fresh Cherries And Dark Chocolate
+    </MenuItem>
+    <MenuItem title="Nine Vines Rose" price="7.5 | $32">
+      <span className="uppercase">South Australia</span>. Deliciously Vibrant
+      Light Red Wine With A Fresh, Strong, Spicy Flavour Of Strawberry And
+      Rasberry
+    </MenuItem>
+    <h4 className="font-display leading-none sm:mb-2 sm:mt-12 my-8 text-2xl text-center sm:text-left uppercase">
       Soft Drinks | Juices
-    </h3>
+    </h4>
     <Drink title="Sprite, Diet coke, Lift, Red Fanta, Dry Ginger" price="5" />
     <Drink title="Juice: Orange, Pineapple Cranberry, Apple" price="5.5" />
     <Drink title="Tonic Water" price="5.5" />
     <Drink title="Sparkling Water" price="4.5" />
     <Drink title="Pellegrino Sparkling" price="8" />
     <Drink title="Mount Franklin Still" price="4" />
-    <Heading title="Wine" subtitle="Glass | Bottle" />
-    <MenuItem
-      title="THE ANCHORAGE SEMILLON SAUVIGNON BLANC"
-      price="7.5&nbsp;|&nbsp;$32"
-    >
-      SOUTH AUSTRALIA. Lifted fruit salad flavours, distinctive herbaceous and
-      tropical characters followed by delicate citrus notes
-    </MenuItem>
-    <MenuItem title="STUDIO SERIES CHARDONNAY" price="8&nbsp;|&nbsp;$35">
-      SOUTH AUSTRALIA. White peach, citrus and melon flavours accentuated by a
-      savour oak nose
-    </MenuItem>
-    <MenuItem title="STONEGATE SAUVIGNON BLANC" price="8&nbsp;|&nbsp;$35">
-      SOUTH AUSTRALIA. Clean Crisp Flavours Of Tropical Fruit With A Light
-      Herbaceous Bouquet
-    </MenuItem>
-    <Heading title="Sparkling" subtitle="Glass | Bottle" />
-  </>
+  </div>
 );
 
 const Heading = ({ title, subtitle }) => (
-  <div className="flex items-baseline justify-between">
-    <h3 className="font-display mb-4 mt-8 sm:text-3xl uppercase">{title}</h3>
-    <div className="font-display">{subtitle}</div>
+  <div className="flex flex-wrap items-baseline justify-between leading-none mb-4 mt-4 sm:mt-0 uppercase">
+    <h3 className="font-display mr-2 mt-8 sm:text-2xl">{title}</h3>
+    <div className="font-display sm:text-2xl whitespace-no-wrap">
+      {subtitle}
+    </div>
   </div>
 );
 
 const Drink = ({ title, price }) => (
-  <div className="sm:flex justify-between leading-none mb-2">
-    <div className="max-w-lg sm:pr-12">
+  <div className="flex flex-wrap justify-between leading-none mb-2">
+    <div className="flex-1 max-w-lg pr-2 sm:pr-12">
       <h2 className="sm:text-xl uppercase">{title}</h2>
     </div>
-    <div className="font-display sm:text-xl">${price}</div>
+    <div className="font-display sm:text-xl whitespace-no-wrap">${price}</div>
   </div>
 );
 
