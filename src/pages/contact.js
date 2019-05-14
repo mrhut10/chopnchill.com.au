@@ -42,19 +42,15 @@ const ContactPage = () => (
             style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center max-w-3xl mx-auto p-8">
+          <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">Contact</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Eligendi aspernatur optio libero illo nisi rerum. Distinctio
-                expedita est totam illum quod. Consequatur commodi recusandae
-                veniam ratione aspernatur est, beatae tempore.
-              </p>
             </div>
           </div>
         </div>
-        <ContactForm />
+        <div className="border-2 border-brand-blue m-4 max-w-3xl mx-auto p-4 text-xl">
+          <ContactForm />
+        </div>
       </Layout>
     )}
   />

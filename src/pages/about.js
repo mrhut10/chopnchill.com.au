@@ -41,16 +41,28 @@ const AboutPage = () => (
             style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center max-w-3xl mx-auto p-8">
+          <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">About Us</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Eligendi aspernatur optio libero illo nisi rerum. Distinctio
-                expedita est totam illum quod. Consequatur commodi recusandae
-                veniam ratione aspernatur est, beatae tempore.
-              </p>
             </div>
+          </div>
+        </div>
+        <div className="border-2 border-brand-blue m-4 max-w-3xl mx-auto p-4 text-xl">
+          <div className="max-w-lg mx-auto">
+            <p>
+              A love of the food hospitality industry along with extensive
+              researching of various cuisines around the world and a desire to
+              share their accumulated experiences and knowledge with people in
+              their home town, are the main reasons behind Paul and Jacqueline
+              establishing the Chop ‘n Chill concept. And it’s more than just
+              the food as a big part of the concept is what it offers people by
+              way of location - in the centre of town right on the Town Green;
+              spectacular views – across the Town Green and the beautiful
+              Hastings River; indoor/outdoor dining – in relaxing and pleasant
+              surrounds; kids play park – in full view from the restaurant. Chop
+              ‘n Chill is a destination that’s all about spending great times
+              with family and friends.
+            </p>
           </div>
         </div>
       </Layout>
