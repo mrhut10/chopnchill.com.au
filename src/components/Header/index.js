@@ -66,8 +66,9 @@ const Header = () => (
           <NavLink link="/menu" title="Menu" />
           <NavLink link="/about" title="About" />
           <NavLink link="/contact" title="Contact" />
+          <NavLink link="/franchising" title="Franchising" />
           <a
-            className="block px-6 sm:px-2 py-2"
+            className="block px-6 sm:px-2 py-2 whitespace-no-wrap"
             href={`tel:${data.site.siteMetadata.phone}`}
           >
             Call {data.site.siteMetadata.phoneFormatted}
