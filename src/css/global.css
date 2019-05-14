@@ -68,7 +68,7 @@ body {
 }
 
 .tab-list {
-  writing-mode: vertical-rl;
+  @apply vertical;
   @apply border-brand-blue;
   @apply border-r-2;
 }
@@ -87,4 +87,10 @@ body {
   content: '›';
   @apply float-left;
   @apply mr-2;
+}
+
+@responsive {
+  .vertical {
+    writing-mode: vertical-lr;
+  }
 }
