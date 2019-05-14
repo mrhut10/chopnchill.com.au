@@ -43,7 +43,7 @@ const Drinks = () => (
     <Drink title="Furphy Refreshing Ale" price="7.5" />
     <Drink title="Canadian Club &amp; Dry" price="9.5" />
     <div className="relative">
-      <h3 className="sm:absolute bg-white font-display sm:left-0 -mb-8 sm:mb-0 sm:-ml-16 mt-8 sm:pl-2 sm:py-2 text-2xl text-center top-0 uppercase sm:vertical sm:whitespace-no-wrap">
+      <h3 className="sm:absolute bg-white font-display sm:left-0 -mb-8 sm:mb-0 sm:-ml-16 mt-6 sm:pl-2 sm:py-2 text-2xl text-center top-0 uppercase sm:vertical sm:whitespace-no-wrap">
         Wine Time
       </h3>
     </div>
