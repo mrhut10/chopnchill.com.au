@@ -77,21 +77,25 @@ const EventsSection = () => (
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.birthdays.childImageSharp.fluid}
               />
-              <span className="absolute">Birthdays</span>
+              <span className="absolute ease hover:zoom">Birthdays</span>
             </div>
             <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
               <Img
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.babyShowers.childImageSharp.fluid}
               />
-              <span className="absolute">Baby Showers</span>
+              <span className="absolute ease hover:zoom">
+                Baby
+                <br />
+                Showers
+              </span>
             </div>
             <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
               <Img
                 className="h-full opacity-50 rounded-full w-full"
                 fluid={data.specialFunctions.childImageSharp.fluid}
               />
-              <span className="absolute">
+              <span className="absolute ease hover:zoom">
                 Special <br />
                 Functions
               </span>

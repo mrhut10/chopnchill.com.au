@@ -64,28 +64,28 @@ const MenuSection = () => (
                   className="h-32 opacity-50 overflow-hidden rounded-full w-32"
                   fluid={data.breakfast.childImageSharp.fluid}
                 />
-                <span className="absolute">Breakfast</span>
+                <span className="absolute ease hover:zoom">Breakfast</span>
               </div>
               <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
                 <Img
                   className="h-full opacity-50 rounded-full w-full"
                   fluid={data.mainMenu.childImageSharp.fluid}
                 />
-                <span className="absolute">Main Menu</span>
+                <span className="absolute ease hover:zoom">Main Menu</span>
               </div>
               <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
                 <Img
                   className="h-full opacity-50 rounded-full w-full"
                   fluid={data.takeAway.childImageSharp.fluid}
                 />
-                <span className="absolute">Take Away</span>
+                <span className="absolute ease hover:zoom">Take Away</span>
               </div>
               <div className="bg-brand-blue flex flex-shrink-0 font-display h-32 items-center justify-center leading-none mr-6 overflow-hidden relative rounded-full text-center text-white w-32">
                 <Img
                   className="h-full opacity-50 rounded-full w-full"
                   fluid={data.beverages.childImageSharp.fluid}
                 />
-                <span className="absolute">Beverages</span>
+                <span className="absolute ease hover:zoom">Beverages</span>
               </div>
             </div>
           </div>

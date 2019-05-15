@@ -91,4 +91,17 @@ body {
   .vertical {
     writing-mode: vertical-lr;
   }
+
+  .zoom {
+    scale: 1.1;
+  }
+}
+
+@variants responsive, hover {
+  .zoom {
+    transform: scale(1.25);
+  }
+  .ease {
+    transition: all 0.2s ease-in-out;
+  }
 }
