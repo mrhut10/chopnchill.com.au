@@ -68,11 +68,9 @@ body {
 }
 
 .tab-list {
-  @apply vertical;
   @apply border-brand-blue;
   @apply border-r-2;
 }
-.tab-list-item:first-child,
 .tab-list-item:last-child {
   @apply border-b-2;
 }
