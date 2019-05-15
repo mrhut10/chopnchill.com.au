@@ -29,7 +29,7 @@ class Tabs extends Component {
 
     return (
       <div className="tabs flex max-w-3xl mx-auto p-4 text-xl w-full">
-        <ol className="tab-list border-t flex">
+        <ol className="tab-list border-t flex vertical">
           {children.map(child => {
             const { label } = child.props;
 
