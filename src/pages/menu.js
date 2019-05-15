@@ -9,6 +9,7 @@ import ToShare from '../components/Menu/ToShare';
 import OrNotToShare from '../components/Menu/OrNotToShare';
 import Breakfast from '../components/Menu/Breakfast';
 import VeganVegitarian from '../components/Menu/VeganVegitarian';
+import GlutenFree from '../components/Menu/GlutenFree';
 import Drinks from '../components/Menu/Drinks';
 
 const MenuPage = () => (
@@ -71,6 +72,9 @@ const MenuPage = () => (
           </div>
           <div label="Vegan / Vegatarian">
             <VeganVegitarian />
+          </div>
+          <div label="Gluten Free">
+            <GlutenFree />
           </div>
           <div label="Drinks">
             <Drinks />
