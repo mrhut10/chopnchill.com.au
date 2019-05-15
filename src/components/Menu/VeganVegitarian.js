@@ -82,73 +82,72 @@ const Breakfast = () => (
         Siracha Mayonnaise (VEGETARIAN) Vegan Mayonnaise. (VEGAN)
       </p>
     </MenuItem>
-    <div className="border-t-2 sm:border-2 border-brand-blue sm:flex -mb-8 mt-8 -mx-6 sm:m-0">
-      <div className="font-bold font-display sm:py-4 sm:px-2 text-2xl text-center uppercase sm:vertical">
+    <div className="border-2 border-brand-blue flex">
+      <div className="font-bold font-display py-4 px-2 text-2xl text-center uppercase vertical">
         Extras
       </div>
-      <div className="bg-brand-blue leading-tight px-4 py-2 text-white w-full">
-        <ul style={{ columns: `12rem` }}>
-          <li>
-            <ul className="extras-menu md:footer-squiggle">
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4">
-                  <span>Garden Salad</span>
-                  <span>$10</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4">
-                  <span>Seasonal Vegetables</span>
-                  <span>$10</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4">
-                  <span>Chilli Beans</span>
-                  <span>$10</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4">
-                  <span>Sweet Potato Fries</span>
-                  <span>$12</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-            </ul>
-            <ul className="extras-menu">
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4 sm:pr-0">
-                  <span>Steamed Rice</span>
-                  <span>$5</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4 sm:pr-0">
-                  <span>Chunky or Shoe-String Fries</span>
-                  <span>$10</span>
-                  <span className="w-full">(VEGETARIAN/VEGAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4 sm:pr-0">
-                  <span>Mac ‘n Cheese</span>
-                  <span>$10</span>
-                  <span className="w-full">(VEGETARIAN)</span>
-                </div>
-              </li>
-              <li className="pb-4">
-                <div className="flex flex-wrap justify-between pr-4 sm:pr-0">
-                  <span>House-Slaw</span>
-                  <span>$5</span>
-                  <span className="w-full">(VEGETARIAN)</span>
-                </div>
-              </li>
-            </ul>
+      <div className="bg-brand-blue flex flex-wrap leading-tight px-4 py-2 text-white w-full">
+        <ul className="extras-menu sm:footer-squiggle w-full sm:w-1/2">
+          <li className="pb-4">
+            <p>
+              Garden Salad $10
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              Seasonal Vegetables $10
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              Chilli Beans $10
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              Sweet Potato Fries $12
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+        </ul>
+        <ul
+          className="extras-menu pl-4 w-full sm:w-1/2"
+          style={{ backgroundPosition: `right 45px bottom` }}
+        >
+          <li className="top-4">
+            <p>
+              Steamed Rice $5
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              Chunky or Shoe-String Fries $10
+              <br />
+              (VEGETARIAN/VEGAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              Mac ‘n Cheese $10
+              <br />
+              (VEGETARIAN)
+            </p>
+          </li>
+          <li className="pb-4">
+            <p>
+              House-Slaw $5
+              <br />
+              (VEGETARIAN)
+            </p>
           </li>
         </ul>
       </div>
