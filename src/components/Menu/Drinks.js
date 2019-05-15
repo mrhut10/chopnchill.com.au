@@ -48,7 +48,12 @@ const Drinks = () => (
     <Heading title="White&nbsp;Wine" />
     <MenuItem
       title="The Anchorage Semillon Sauvignon Blanc"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Lifted fruit salad
       flavours, distinctive herbaceous and tropical characters followed by
@@ -56,35 +61,60 @@ const Drinks = () => (
     </MenuItem>
     <MenuItem
       title="Studio Series Chardonnay"
-      price={['Glass $8', <br className="hidden sm:block" />, ' Bottle $35']}
+      price={[
+        'Glass $8',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $35',
+      ]}
     >
       <span className="uppercase">South Australia</span>. White peach, citrus
       and melon flavours accentuated by a savour oak nose
     </MenuItem>
     <MenuItem
       title="Stonegate Sauvignon Blanc"
-      price={['Glass $8', <br className="hidden sm:block" />, ' Bottle $35']}
+      price={[
+        'Glass $8',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $35',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Clean Crisp Flavours
       Of Tropical Fruit With A Light Herbaceous Bouquet
     </MenuItem>
     <MenuItem
       title="Mondiale Marlbourough Sauvigon Blanc"
-      price={['Glass $9', <br className="hidden sm:block" />, ' Bottle $40']}
+      price={[
+        'Glass $9',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $40',
+      ]}
     >
       <span className="uppercase">South Island New Zealand</span>. Delicious
       Combination Of Clean Herbaceous Character And Light Tropical Piquancy
     </MenuItem>
     <MenuItem
       title="La Bossa Pinot Grigio"
-      price={['Glass $8', <br className="hidden sm:block" />, ' Bottle $35']}
+      price={[
+        'Glass $8',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $35',
+      ]}
     >
       <span className="uppercase">King Valley Victoria</span>. Crunchy Pear
       Taste Offering A MidPalate Balance And A Clean Finish
     </MenuItem>
     <MenuItem
       title="Ringmaster Riesling"
-      price={['Glass $8.5', <br className="hidden sm:block" />, ' Bottle $40']}
+      price={[
+        'Glass $8.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $40',
+      ]}
     >
       <span className="uppercase">Clare Valley</span>. Our Number One Seller.
       Floral With Limes, Lemons And Green Apples. Mouth Filling Citrus Flavours
@@ -92,14 +122,24 @@ const Drinks = () => (
     </MenuItem>
     <MenuItem
       title="Angove Family Crest Chardonnay"
-      price={['Glass $8.5', <br className="hidden sm:block" />, ' Bottle $40']}
+      price={[
+        'Glass $8.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $40',
+      ]}
     >
       <span className="uppercase">Adelaide Hills</span>. An Aroma Of Cantaloupe,
       White Peach, Lemon And Smoky French Oak. A Delightful Clean Finish
     </MenuItem>
     <MenuItem
       title="Sugar And Spice Moscato"
-      price={['Glass $8.5', <br className="hidden sm:block" />, ' Bottle $40']}
+      price={[
+        'Glass $8.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $40',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Lightly Carbonated
       With Robust Mango, Lychee And Pear Flavours
@@ -108,14 +148,24 @@ const Drinks = () => (
     <Heading title="Sparkling" />
     <MenuItem
       title="Sparkling Angove Organic Brut Cuvee"
-      price={['Glass $8', <br className="hidden sm:block" />, ' Bottle $36']}
+      price={[
+        'Glass $8',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $36',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Crisp And Clean With
       Subtle Nuttiness, Ripe Citrus And Nashi Pear
     </MenuItem>
     <MenuItem
       title="Villa Jolanda Prosecco"
-      price={['Glass $8', <br className="hidden sm:block" />, ' Bottle $36']}
+      price={[
+        'Glass $8',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $36',
+      ]}
     >
       <span className="uppercase">Italy</span>. Clean With Lively Aromatic Apple
       And Pear Aromas. Light And Well Balanced
@@ -138,7 +188,12 @@ const Drinks = () => (
     <Heading title="Red Wine" />
     <MenuItem
       title="The Anchorage Cabernet Merlot"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Ripe, Fruity and
       Voluptuous. Perfectly Interwined With Subtle Oak Influences and a Soft
@@ -146,14 +201,24 @@ const Drinks = () => (
     </MenuItem>
     <MenuItem
       title="La Bossa Cabernet Sauvignon"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Cherry And Black Fruit
       Aromas Enhanced By Subtle, Minty Tones On The Palate
     </MenuItem>
     <MenuItem
       title="Rhythm &amp; Rhyme Shiraz"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. A Rich Red Of Cherry
       And Plum Fruits, Spice And A Hink Of Oak, Complimented With Fine Soft
@@ -161,7 +226,12 @@ const Drinks = () => (
     </MenuItem>
     <MenuItem
       title="Angove McLaren Vale Shiraz"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Upfront Pepper, Red
       Cherry & Black Chocolate characteristics Accompanied By a Soft Raspberry
@@ -169,28 +239,48 @@ const Drinks = () => (
     </MenuItem>
     <MenuItem
       title="Duck Shoot Pinot Noir"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">Yarra Valley</span>. Aromas Of Strawberry And
       Forest Floor. Soft And Rich With Silky Pinot Tannin
     </MenuItem>
     <MenuItem
       title="Alternatus Grenache"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">McLaren Vale</span>. Spiced Plum, Raspberry
       And Cherry Fruit Flavours With Perfumed And Supple Medium Bodied Palate
     </MenuItem>
     <MenuItem
       title="Schild Merlot"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">Barossa Valley</span>. Intense Aromas Of Dark
       Plum With Suggestion Of Fresh Cherries And Dark Chocolate
     </MenuItem>
     <MenuItem
       title="Nine Vines Rose"
-      price={['Glass $7.5', <br className="hidden sm:block" />, ' Bottle $32']}
+      price={[
+        'Glass $7.5',
+        <span className="sm:hidden"> |</span>,
+        <br className="hidden sm:block" />,
+        ' Bottle $32',
+      ]}
     >
       <span className="uppercase">South Australia</span>. Deliciously Vibrant
       Light Red Wine With A Fresh, Strong, Spicy Flavour Of Strawberry And
