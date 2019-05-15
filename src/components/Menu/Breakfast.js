@@ -97,10 +97,7 @@ with Ham Hocks, Bacon or Salmon"
       <p>Description to follow</p>
     </MenuItem>
     <div className="border-2 border-brand-blue flex">
-      <div
-        className="font-bold font-display py-4 px-2 text-2xl text-center uppercase"
-        style={{ writingMode: `vertical-lr` }}
-      >
+      <div className="font-bold font-display py-4 px-2 text-2xl text-center uppercase vertical">
         Extras
       </div>
       <div className="bg-brand-blue px-4 py-2 text-white w-full">
