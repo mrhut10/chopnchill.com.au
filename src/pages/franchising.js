@@ -16,7 +16,7 @@ const FranchisingPage = () => (
         }
       }
       query FranchisingPageQuery {
-        hero: file(relativePath: { eq: "menu.jpg" }) {
+        hero: file(relativePath: { eq: "franchising.jpg" }) {
           ...FranchisingPageFluidImage
         }
       }
@@ -47,8 +47,8 @@ const FranchisingPage = () => (
             </div>
           </div>
         </div>
-        <div className="border-2 border-brand-blue m-4 max-w-3xl mx-auto p-4 text-xl">
-          <div className="max-w-lg mx-auto">
+        <div className="max-w-3xl mx-auto p-4 text-xl">
+          <div className="border-2 border-brand-blue max-w-lg mx-auto p-4">
             <p>
               If you like the Chop ‘n Chill concept and believe you have the
               passion, drive and dedication to take it back to your home town,
