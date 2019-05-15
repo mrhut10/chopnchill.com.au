@@ -16,7 +16,7 @@ const FranchisingPage = () => (
         }
       }
       query FranchisingPageQuery {
-        hero: file(relativePath: { eq: "menu.jpg" }) {
+        hero: file(relativePath: { eq: "franchising.jpg" }) {
           ...FranchisingPageFluidImage
         }
       }
@@ -38,7 +38,7 @@ const FranchisingPage = () => (
         <div className="bg-brand-blue relative">
           <Img
             className="opacity-75"
-            style={{ height: `50vh`, minHeight: `22rem` }}
+            // style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
           <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">

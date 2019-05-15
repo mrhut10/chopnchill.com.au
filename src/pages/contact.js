@@ -17,7 +17,7 @@ const ContactPage = () => (
         }
       }
       query ContactPageQuery {
-        hero: file(relativePath: { eq: "menu.jpg" }) {
+        hero: file(relativePath: { eq: "contact.jpg" }) {
           ...contactPageFluidImage
         }
       }

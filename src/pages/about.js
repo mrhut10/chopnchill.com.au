@@ -16,7 +16,7 @@ const AboutPage = () => (
         }
       }
       query AboutPageQuery {
-        hero: file(relativePath: { eq: "menu.jpg" }) {
+        hero: file(relativePath: { eq: "about.jpg" }) {
           ...aboutPageFluidImage
         }
       }
