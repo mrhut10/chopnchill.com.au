@@ -52,7 +52,7 @@ const ToShare = () => (
         Dipping Sauces.
       </p>
     </MenuItem>
-    <MenuItem title="MIXED QUESADILLAS" price="$19">
+    <MenuItem title="Mixed Quesadillas" price="$19">
       <p>
         American style Quesadilla; one side filled with melted-Cheese ‘n Garlic;
         the other with Smoked BBQ Brisket, Cheese-Melt, Jalapeno and Onion. Sour
@@ -65,7 +65,7 @@ const ToShare = () => (
         special house made Singapore Chilli Sauce.
       </p>
     </MenuItem>
-    <MenuItem title="TACOS (choice of Fish, pork OR brisket)" price="$23.5">
+    <MenuItem title="Tacos (Choice of Fish, Pork or Brisket)" price="$23.5">
       <p>
         Three warm Soft-flour Tortillas filled with your choice of Battered
         Fish, Smoked Pork, or Smoked Brisket. Served with Chinese Pickled
@@ -73,7 +73,7 @@ const ToShare = () => (
         Mayonnaise, Lemon ‘n Lime Wedges. + Avocado $4
       </p>
     </MenuItem>
-    <MenuItem title="PULLED PORK SLIDERS" price="$26.5">
+    <MenuItem title="Pulled Pork Sliders" price="$26.5">
       <p>
         Two packed Sliders of hand-pulled Smoked Pork, served with House-made
         Slaw, Chunky Fries and Lazy Paul’s Spicy Marinate.

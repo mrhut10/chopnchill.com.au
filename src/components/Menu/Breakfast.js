@@ -4,8 +4,8 @@ import MenuItem from './MenuItem';
 const Breakfast = () => (
   <>
     <MenuItem
-      title="BAKED AVOCADO BOATS WITH
-  POACHED EGGS"
+      title="Baked Avocado Boats with
+  Poached Eggs"
       price="$20"
     >
       <p>
@@ -13,42 +13,42 @@ const Breakfast = () => (
         Toast Locally-Made Sweet Caramelized Breakfast Chutney.
       </p>
     </MenuItem>
-    <MenuItem title="CURRIED PRATA with EGG SOLDIERS" price="$XX">
+    <MenuItem title="Curried Prata with Egg Soldiers" price="$XX">
       <p>
         A delicious Dipping Dish of Curried Prata, Poached Egg and Locally-Made
         Sweet Caramelized Breakfast Chutney with Toasted Sourdough and Roti
         Bread Soldiers.
       </p>
     </MenuItem>
-    <MenuItem title="CHOP ‘n CHILL TOWN GREEN" price="$17">
+    <MenuItem title="Chop ‘n Chill Town Green" price="$17">
       <p>
         An easy Breakfast Dish of Smashed Avocado, Roasted Tomatoes, Goat’s
         Cheese & Pesto on Thick White Toast.
       </p>
     </MenuItem>
-    <MenuItem title="CHOP CHOP BOWL" price="$XX">
+    <MenuItem title="Chop Chop Bowl" price="$XX">
       <p>
         Wholesome Dish of Scrambled Eggs, Smashed Avocado, Chilli Beans, Pickled
         Vegetables, Grated Cheese and Shredded Lettuce. Served with Soft
         Tortillas and Sriracha Mayonnaise.
       </p>
     </MenuItem>
-    <MenuItem title="PORK BREKKY BURRITO" price="$22">
+    <MenuItem title="Pork Brekky Burrito" price="$22">
       <p>
         Smoked Pulled-Pork Burrito with Soft-Poached Eggs, Lettuce, Tomato and
         Avocado Spread. Served with Lazy Paul’s BBQ Sauce ‘n Mild Chipotle
         Cream.
       </p>
     </MenuItem>
-    <MenuItem title="BACON and EGG ROLL" price="$13">
+    <MenuItem title="Bacon and Egg Roll" price="$13">
       <p>
         Bacon ‘n Fried Egg with Lazy Paul’s BBQ Sauce on a Fresh Hi-top Bun,
         with a side-serving of Crispy Potato Chunks.
       </p>
     </MenuItem>
     <MenuItem
-      title="EGGS BENEDICT:
-WITH HAM HOCKS, BACON OR SALMON"
+      title="Eggs Benedict:
+with Ham Hocks, Bacon or Salmon"
       price="$23"
     >
       <p>
@@ -63,37 +63,37 @@ WITH HAM HOCKS, BACON OR SALMON"
         Beans 'n Spinach Leaves. Comes with Lazy Paul’s BBQ Sauce.
       </p>
     </MenuItem>
-    <MenuItem title="BOARDRIDER’S BRUSCHETTA" price="$17">
+    <MenuItem title="Boardrider’s Bruschetta" price="$17">
       <p>
         Bacon and Poached Eggs with Bruschetta Tomatoes on Sourdough Toast and
         Balsamic Glaze.
       </p>
     </MenuItem>
-    <MenuItem title="THE NEW YORKER" price="$22">
+    <MenuItem title="The New Yorker" price="$22">
       <p>
         A big helping of Smoked Brisket with Crispy Potato Chunks, Poached Eggs,
         Pesto & Lazy Paul’s BBQ Sauce.
       </p>
     </MenuItem>
-    <MenuItem title="TOAST ON THE GO" price="$8">
+    <MenuItem title="Toast on the Go" price="$8">
       <p>
         Choose from Thick White/Sourdough/ Fruit Loaf/ Banana Bread or
         Croissant. All with a choice of condiments. Add any extras.
       </p>
     </MenuItem>
-    <MenuItem title="CnC’s HUEVOS RANCHEROS" price="$XX">
+    <MenuItem title="CnC’s Huevos Rancheros" price="$XX">
       <p>
         Lightly-Fried Rice Paper Basket filled with House-Made Chilli Beans,
         topped with Shredded Cheese ‘n Fried Eggs.
       </p>
     </MenuItem>
-    <MenuItem title="CONTINENTAL WAFFLES" price="$17">
+    <MenuItem title="Continental Waffles" price="$17">
       <p>
         Toasted Belgian Waffles topped with Wild Berries, Whipped Cream and
         Canadian Maple Syrup.
       </p>
     </MenuItem>
-    <MenuItem title="THE BIG BREKKY PLATTER FOR TWO OR MORE" price="$XX">
+    <MenuItem title="The Big Brekky Platter for Two or More" price="$XX">
       <p>Description to follow</p>
     </MenuItem>
     <div className="border-2 border-brand-blue flex">
