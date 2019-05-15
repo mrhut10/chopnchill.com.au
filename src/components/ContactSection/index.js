@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 
-import CheeseBoard from '../../images/cheeseboard.svg';
 import ContactForm from '../ContactForm';
+import ContactMobileImage from '../../images/contact-mobile.svg';
+import ContactDesktopImage from '../../images/contact-desktop.svg';
 
 const ContactSection = () => (
   <StaticQuery
@@ -22,8 +23,8 @@ const ContactSection = () => (
           <div className="flex items-start">
             <div className="text-xl w-full">
               <img
-                className="sm:hidden mb-6 mx-auto w-full"
-                src={CheeseBoard}
+                className="sm:hidden p-6 mx-auto w-full"
+                src={ContactMobileImage}
                 alt=""
               />
               <div className="squiggle bg-left leading-tight max-w-lg mb-4 mr-auto sm:ml-12 pl-6 sm:pl-12 pr-4">
@@ -47,7 +48,7 @@ const ContactSection = () => (
             </div>
             <img
               className="hidden sm:block ml-6 w-64"
-              src={CheeseBoard}
+              src={ContactDesktopImage}
               alt=""
             />
           </div>

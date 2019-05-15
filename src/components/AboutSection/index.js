@@ -14,7 +14,7 @@ const AboutSection = () => (
         />
         <div className="text-xl w-full">
           <img
-            className="sm:hidden mb-6 mx-auto w-full"
+            className="sm:hidden p-6 mx-auto w-full"
             src={AboutMobileImage}
             alt=""
           />

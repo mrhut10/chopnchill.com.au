@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
 import EventsDesktopImage from '../../images/events-desktop.svg';
+import EventsMobileImage from '../../images/events-mobile.svg';
 
 const EventsSection = () => (
   <StaticQuery
@@ -42,8 +43,8 @@ const EventsSection = () => (
             />
             <div className="text-xl w-full">
               <img
-                className="sm:hidden mb-6 mx-auto w-full"
-                src={EventsDesktopImage}
+                className="sm:hidden p-6 mx-auto w-full"
+                src={EventsMobileImage}
                 alt=""
               />
               <div className="squiggle bg-right leading-tight max-w-lg mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4">
