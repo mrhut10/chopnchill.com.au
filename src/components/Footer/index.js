@@ -87,18 +87,22 @@ const Footer = () => (
             <div className="flex flex-wrap">
               <ul>
                 <li>
-                  <Link>Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link>Menu</Link>
+                  <Link to="/menu">Menu</Link>
                 </li>
                 <li>
-                  <Link>About Us</Link>
+                  <Link to="/about">About Us</Link>
                 </li>
               </ul>
               <ul className="ml-auto">
-                <li>Functions</li>
-                <li>Contact</li>
+                <li>
+                  <Link to="/franchising">Franchising</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
               </ul>
             </div>
           </div>
