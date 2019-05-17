@@ -1,18 +1,3 @@
 {
-    "title": "Not To Share",
-    "items":[
-      {
-        "title":"Beers and Ciders",
-        "items":[
-          {
-            "title":"Hahn Premium Light",
-            "price":600
-          },
-          {
-            "title":"Pacific Radler",
-            "price":500
-          }
-        ]
-      }
-    ]
+    "title": "or Not To Share" 
 }
