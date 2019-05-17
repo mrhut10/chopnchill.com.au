@@ -1,8 +1,14 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
+import propTypes from 'prop-types';
+import slugify from 'slugify';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import DumbTabs from '../components/Menu/DumbTabs';
+import DumbTab from '../components/Menu/DumbTab';
+
+
 
 const pageQuery = graphql`
   fragment menuPage1FluidImage on File {
@@ -16,10 +22,18 @@ const pageQuery = graphql`
     hero: file(relativePath: { eq: "menu.jpg" }) {
       ...menuPageFluidImage
     }
+    allMenuJson {
+      edges {
+        node {
+          title
+        }
+      }
+    }  
   }
+  
 `;
 
-const MenuPage = props => (
+const MenuPage = ({ pageContext }) => (
   <StaticQuery
     query={pageQuery}
     render={data => (
@@ -54,9 +68,24 @@ const MenuPage = props => (
             </div>
           </div>
         </div>
+        <DumbTabs
+          TabArray={
+            // [DumbTab({label:'im a label', path:'/menu', active:true, Content:<p>hello</p>})]
+            data.allMenuJson.edges.map(child => {
+              const label = child.node.title;
+              const path = `/menu/${slugify(label, { lower: true })}`;
+              const active = pageContext.selectedMenuTab === label;
+              const Content = <div>{JSON.stringify({label,path,active,url:pageContext})}</div>;
+              return DumbTab({ label, path, active, Content });
+            })
+          }
+        />
       </Layout>
     )}
   />
 );
 
+MenuPage.propTypes = {
+  pageContext: propTypes.any,
+};
 export default MenuPage;
