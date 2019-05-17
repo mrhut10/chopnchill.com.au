@@ -8,8 +8,6 @@ import SEO from '../components/SEO';
 import DumbTabs from '../components/Menu/DumbTabs';
 import DumbTab from '../components/Menu/DumbTab';
 
-
-
 const pageQuery = graphql`
   fragment menuPage1FluidImage on File {
     childImageSharp {

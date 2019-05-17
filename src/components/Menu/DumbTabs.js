@@ -12,7 +12,7 @@ const DumbTabs = ({ TabArray }) => (
     </div>
     <div>
       {/* Display visible content */}
-      {TabArray.map(child => child.Content)}
+      {TabArray.find(child => child.active).Content}
     </div>
   </div>
 );
