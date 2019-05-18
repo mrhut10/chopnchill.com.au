@@ -8,6 +8,41 @@ import SEO from '../components/SEO';
 import DumbTabs from '../components/Menu/DumbTabs';
 import DumbTab from '../components/Menu/DumbTab';
 
+import ToShare from '../components/Menu/ToShare';
+import OrNotToShare from '../components/Menu/OrNotToShare';
+import Breakfast from '../components/Menu/Breakfast';
+import VeganVegitarian from '../components/Menu/VeganVegitarian';
+import GlutenFree from '../components/Menu/GlutenFree';
+import Drinks from '../components/Menu/Drinks';
+
+const contentPaths = [
+  ['', ToShare],
+  ['to-share', ToShare],
+  ['or-not-to-share', OrNotToShare],
+  ['breakfast', Breakfast],
+  ['vegan-vegatarian', VeganVegitarian],
+  ['gluten-free', GlutenFree],
+  ['drinks', Drinks],
+];
+
+const LabelToContent = label => {
+  const expectedSlug = slugify(label, { lower: true });
+  const foundIt = contentPaths.find(a => a[0] === expectedSlug);
+  if (!foundIt) {
+    throw Error(
+      `Sorry unable to find that menu
+      ${JSON.stringify({
+        expectedSlug,
+        foundIt,
+        contentPaths,
+      })}
+      `
+    );
+  }
+
+  return foundIt[1];
+};
+
 const pageQuery = graphql`
   fragment menuPage1FluidImage on File {
     childImageSharp {
@@ -26,9 +61,8 @@ const pageQuery = graphql`
           title
         }
       }
-    }  
+    }
   }
-  
 `;
 
 const MenuPage = ({ pageContext }) => (
@@ -73,8 +107,8 @@ const MenuPage = ({ pageContext }) => (
               const label = child.node.title;
               const path = `/menu/${slugify(label, { lower: true })}`;
               const active = pageContext.selectedMenuTab === label;
-              const Content = <div>{JSON.stringify({label,path,active,url:pageContext})}</div>;
-              return DumbTab({ label, path, active, Content });
+              const Content = LabelToContent(label);
+              return DumbTab({ label, path, active, Content: <Content /> });
             })
           }
         />

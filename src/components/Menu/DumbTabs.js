@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import DumbTab from './DumbTab';
+import DumbLabel from './DumbTabLabel';
 
 const DumbTabs = ({ TabArray }) => (
   <div>
-    <div>
+    <div className="menuLabels">
       {/* Dump of Labels */}
       {TabArray.map(child => (
         <p>{child.label}</p>
       ))}
     </div>
-    <div>
-      {/* Display visible content */}
+    {/* Display visible content */}
+    <div className="menuContent">
       {TabArray.find(child => child.active).Content}
     </div>
   </div>
 );
 
 DumbTabs.propTypes = {
-  TabArray: propTypes.arrayOf(DumbTabs),
+  TabArray: propTypes.arrayOf(propTypes.any),
 };
 
 export default DumbTabs;
