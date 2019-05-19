@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import propTypes from 'prop-types';
 import slugify from 'slugify';
 import Img from 'gatsby-image';
+import { navigate } from '@reach/router';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import DumbTabs from '../components/Menu/DumbTabs';
@@ -14,7 +15,6 @@ import Breakfast from '../components/Menu/Breakfast';
 import VeganVegetarian from '../components/Menu/VeganVegetarian';
 import GlutenFree from '../components/Menu/GlutenFree';
 import Drinks from '../components/Menu/Drinks';
-import { navigate } from '@reach/router';
 
 const contentPaths = [
   ['', ToShare],
