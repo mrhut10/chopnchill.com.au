@@ -117,4 +117,5 @@ const MenuPage = ({ pageContext }) => (
 MenuPage.propTypes = {
   pageContext: propTypes.any,
 };
+
 export default MenuPage;
