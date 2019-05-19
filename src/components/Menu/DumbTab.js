@@ -7,6 +7,8 @@ const DumbTab = ({ label, path, active, Content }) => {
   return {
     active,
     Content,
+    path,
+    labelText: label,
     label: generatedLabel,
   };
 };
