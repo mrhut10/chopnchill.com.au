@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const DumbTabs = ({ TabArray }) => {
-  const onChange = () => (location = Option.value);
+  const onChange = e => location = e.target.value;
 
   return (
     <div className="menu sm:flex max-w-3xl mx-auto sm:p-4 text-base w-full">
