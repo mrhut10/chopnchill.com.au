@@ -44,7 +44,7 @@ const LabelToContent = label => {
 };
 
 const pageQuery = graphql`
-  fragment menuPage1FluidImage on File {
+  fragment menuPageFluidImage on File {
     childImageSharp {
       fluid(maxWidth: 5000) {
         ...GatsbyImageSharpFluid_withWebp

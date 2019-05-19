@@ -28,6 +28,15 @@ exports.createPages = ({ graphql, actions }) => {
         selectedMenuTab: edge.node.title,
       },
     });
+    if (slug === 'to-share') {
+      createPage({
+        path: `/menu/`,
+        component: menuTemplate,
+        context: {
+          selectedMenuTab: edge.node.title,
+        },
+      });
+    }
   };
 
   return menuQuery.then(result => {
