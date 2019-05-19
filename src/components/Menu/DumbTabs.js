@@ -19,6 +19,7 @@ const DumbTabs = ({ TabArray }) => {
         <select
           onChange={onChange}
           className="appearance-none bg-brand-blue block border-2 border-brand-blue font-display leading-tight focus:outline-none pr-8 px-4 py-2 rounded-none focus:shadow-outline text-white w-full"
+          value={TabArray.find(Tab => Tab.active).path}
         >
           {TabArray.map(Tab => (
             <option
