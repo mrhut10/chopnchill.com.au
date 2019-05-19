@@ -6,7 +6,10 @@ const DumbTabs = ({ TabArray }) => (
     <span id="menu" />
     <ul className="border-brand-blue border-t-2 flex flex-wrap font-display items-center leading-none vertical w-8">
       {TabArray.map(tab => (
-        <li className="border-brand-blue border-b-2 border-l-2 flex items-center justify-center w-8">
+        <li
+          key={tab.key}
+          className="border-brand-blue border-b-2 border-l-2 flex items-center justify-center w-8"
+        >
           {tab.label}
         </li>
       ))}
