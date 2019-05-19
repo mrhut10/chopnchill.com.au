@@ -41,14 +41,14 @@ const AboutPage = () => (
             style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">
+          <div className="absolute flex inset-0 items-center justify-center max-w-4xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">About Us</h1>
             </div>
           </div>
         </div>
-        <div className="max-w-3xl mx-auto p-4 text-xl">
-          <div className="border-2 border-brand-blue max-w-lg mx-auto p-4">
+        <div className="max-w-4xl mx-auto p-4">
+          <div className="max-w-lg mx-auto p-4 text-2xl">
             <p>
               A love of the food hospitality industry along with extensive
               researching of various cuisines around the world and a desire to

@@ -41,14 +41,14 @@ const FranchisingPage = () => (
             style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">
+          <div className="absolute flex inset-0 items-center justify-center max-w-4xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">Franchising</h1>
             </div>
           </div>
         </div>
-        <div className="max-w-3xl mx-auto p-4 text-xl">
-          <div className="border-2 border-brand-blue max-w-lg mx-auto p-4">
+        <div className="max-w-4xl mx-auto p-4">
+          <div className="max-w-lg mx-auto p-4 text-2xl">
             <p>
               If you like the Chop ‘n Chill concept and believe you have the
               passion, drive and dedication to take it back to your home town,
@@ -59,21 +59,11 @@ const FranchisingPage = () => (
             </p>
             <p>
               Contact:{' '}
-              <a
-                className="underline"
-                style={{ textDecorationStyle: `wavy` }}
-                href="mailto:jacqueline@chopnchill.com.au"
-              >
+              <a href="mailto:jacqueline@chopnchill.com.au">
                 jacqueline@chopnchill.com.au
               </a>{' '}
               or{' '}
-              <a
-                className="underline"
-                style={{ textDecorationStyle: `wavy` }}
-                href="mailto:paul@chopnchill.com.au"
-              >
-                paul@chopnchill.com.au
-              </a>
+              <a href="mailto:paul@chopnchill.com.au">paul@chopnchill.com.au</a>
             </p>
           </div>
         </div>

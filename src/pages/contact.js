@@ -42,21 +42,21 @@ const ContactPage = () => (
             style={{ height: `50vh`, minHeight: `22rem` }}
             fluid={data.hero.childImageSharp.fluid}
           />
-          <div className="absolute flex inset-0 items-center justify-center max-w-3xl mx-auto p-8">
+          <div className="absolute flex inset-0 items-center justify-center max-w-4xl mx-auto p-8">
             <div className="leading-tight max-w-xs text-white text-xl">
               <h1 className="font-display mb-3 text-6xl">Contact</h1>
             </div>
           </div>
         </div>
-        <div className="max-w-3xl mx-auto p-4 text-xl w-full">
-          <div className="border-2 border-brand-blue flex flex-col items-center justify-center leading-tight max-w-lg mx-auto p-4 w-full">
-            <p className="max-w-sm mb-4">
+        <div className="max-w-4xl mx-auto p-4">
+          <div className="max-w-lg mx-auto p-4 text-2xl">
+            <p className="mb-4">
               We are located on the Town Green overlooking the Hastings River,
               call us on (02) 6583 9155 or complete the enquiry form below. Call
               or email with your questions and queries. We look forward to
               hearing from you!
             </p>
-            <h2 className="max-w-sm text-3xl uppercase w-full">ENQUIRY</h2>
+            <h2 className="max-w-sm text-3xl uppercase w-full">Enquiry</h2>
             <ContactForm />
           </div>
         </div>
