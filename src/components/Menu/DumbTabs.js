@@ -1,8 +1,15 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { navigate } from 'gatsby';
 
 const DumbTabs = ({ TabArray }) => {
-  const onChange = e => location = e.target.value;
+  /*
+    e.target.value returns the value of the selected option
+    navigate allows gatsby to handle the url change and prevents the whole app reloading
+      = way faster plus your not overriding the global location varible from a component (risky)
+  */
+
+  const onChange = e => navigate(e.target.value);
 
   return (
     <div className="menu sm:flex max-w-3xl mx-auto sm:p-4 text-base w-full">
