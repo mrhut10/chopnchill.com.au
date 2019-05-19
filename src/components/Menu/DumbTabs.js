@@ -13,50 +13,16 @@ const DumbTabs = ({ TabArray }) => {
           onChange={onChange}
           className="appearance-none bg-brand-blue block border-2 border-brand-blue font-display leading-tight focus:outline-none pr-8 px-4 py-2 rounded-none focus:shadow-outline text-white w-full"
         >
-          {/* {TabArray.map(tab => (
-          <option
-            key={tab.key}
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            {<tab.label />}
-          </option>
-        ))} */}
-          <option
-            value="/menu/to-share#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            To Share?
-          </option>
-          <option
-            value="/menu/or-not-to-share#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            Or Not To Share?
-          </option>
-          <option
-            value="/menu/breakfast#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            Breakfast
-          </option>
-          <option
-            value="/menu/vegan-vegetarian#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            Vegan / Vegatarian
-          </option>
-          <option
-            value="/menu/gluten-free#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            Gluten Free
-          </option>
-          <option
-            value="/menu/drinks#menu"
-            className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
-          >
-            Drinks
-          </option>
+          {TabArray.map(Tab => (
+            <option
+              key={Tab.labelText}
+              value={Tab.path}
+              className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
+            >
+              {/* seems to only accept text content (no children) */}
+              {Tab.labelText}
+            </option>
+          ))}
         </select>
         <div className="absolute flex inset-y-0 items-center pointer-events-none px-2 right-0 text-white">
           <svg
