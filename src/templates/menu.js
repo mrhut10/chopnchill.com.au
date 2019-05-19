@@ -111,7 +111,7 @@ const MenuPage = ({ pageContext }) => {
             TabArray={data.allMenuJson.edges.map(tab => {
               const label = tab.node.title;
               const key = tab.node.id;
-              const path = `/menu/${slugify(label, { lower: true })}#menu`;
+              const path = `/menu/${slugify(label, { lower: true })}`;
               const active = pageContext.selectedMenuTab === label;
               const Content = LabelToContent(label);
               return DumbTab({
