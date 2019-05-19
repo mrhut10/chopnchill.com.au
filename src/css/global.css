@@ -67,12 +67,18 @@ body {
   shape-outside: circle(123px at 112px 52px);
 }
 
-.tab-list {
-  @apply border-brand-blue;
-  @apply border-r-2;
+#menu {
+  margin-top: -5rem; /* Size of fixed header */
+  padding-bottom: 5rem;
+  display: block;
 }
-.tab-list-item:last-child {
-  @apply border-b-2;
+
+@screen sm {
+  #menu {
+    margin-top: -6rem; /* Size of fixed header */
+    padding-bottom: 6rem;
+    display: block;
+  }
 }
 
 .tab-list-active {

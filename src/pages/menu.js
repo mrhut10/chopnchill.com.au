@@ -8,7 +8,7 @@ import Tabs from '../components/Menu/Tabs';
 import ToShare from '../components/Menu/ToShare';
 import OrNotToShare from '../components/Menu/OrNotToShare';
 import Breakfast from '../components/Menu/Breakfast';
-import VeganVegitarian from '../components/Menu/VeganVegitarian';
+import VeganVegetarian from '../components/Menu/VeganVegetarian';
 import GlutenFree from '../components/Menu/GlutenFree';
 import Drinks from '../components/Menu/Drinks';
 
@@ -71,7 +71,7 @@ const MenuPage = () => (
             <Breakfast />
           </div>
           <div label="Vegan / Vegatarian">
-            <VeganVegitarian />
+            <VeganVegetarian />
           </div>
           <div label="Gluten Free">
             <GlutenFree />
