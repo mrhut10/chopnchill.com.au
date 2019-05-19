@@ -11,7 +11,7 @@ import DumbTab from '../components/Menu/DumbTab';
 import ToShare from '../components/Menu/ToShare';
 import OrNotToShare from '../components/Menu/OrNotToShare';
 import Breakfast from '../components/Menu/Breakfast';
-import VeganVegitarian from '../components/Menu/VeganVegitarian';
+import VeganVegetarian from '../components/Menu/VeganVegetarian';
 import GlutenFree from '../components/Menu/GlutenFree';
 import Drinks from '../components/Menu/Drinks';
 
@@ -20,7 +20,7 @@ const contentPaths = [
   ['to-share', ToShare],
   ['or-not-to-share', OrNotToShare],
   ['breakfast', Breakfast],
-  ['vegan-vegatarian', VeganVegitarian],
+  ['vegan-vegetarian', VeganVegetarian],
   ['gluten-free', GlutenFree],
   ['drinks', Drinks],
 ];
@@ -101,16 +101,13 @@ const MenuPage = ({ pageContext }) => (
           </div>
         </div>
         <DumbTabs
-          TabArray={
-            // [DumbTab({label:'im a label', path:'/menu', active:true, Content:<p>hello</p>})]
-            data.allMenuJson.edges.map(child => {
-              const label = child.node.title;
-              const path = `/menu/${slugify(label, { lower: true })}`;
-              const active = pageContext.selectedMenuTab === label;
-              const Content = LabelToContent(label);
-              return DumbTab({ label, path, active, Content: <Content /> });
-            })
-          }
+          TabArray={data.allMenuJson.edges.map(child => {
+            const label = child.node.title;
+            const path = `/menu/${slugify(label, { lower: true })}#menu`;
+            const active = pageContext.selectedMenuTab === label;
+            const Content = LabelToContent(label);
+            return DumbTab({ label, path, active, Content: <Content /> });
+          })}
         />
       </Layout>
     )}
