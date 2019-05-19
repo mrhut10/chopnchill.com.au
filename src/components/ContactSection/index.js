@@ -18,8 +18,8 @@ const ContactSection = () => (
       }
     `}
     render={data => (
-      <section className="max-w-5xl mx-auto overflow-hidden pb-12 pl-4">
-        <div className="max-w-3xl mr-auto">
+      <section className="max-w-5xl mx-auto overflow-hidden pb-24 pl-4 w-full">
+        <div className="max-w-4xl mr-auto">
           <div className="flex items-start">
             <div className="text-xl w-full">
               <img
@@ -27,7 +27,7 @@ const ContactSection = () => (
                 src={ContactMobileImage}
                 alt=""
               />
-              <div className="squiggle bg-left leading-tight max-w-lg mb-4 mr-auto sm:ml-12 pl-6 sm:pl-12 pr-4">
+              <div className="squiggle bg-left leading-tight max-w-lg mb-4 mr-auto pl-6 sm:pl-12 pr-4">
                 <div className="mb-4">
                   <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
                     Contact Us
@@ -47,7 +47,7 @@ const ContactSection = () => (
               </div>
             </div>
             <img
-              className="hidden sm:block ml-6 w-64"
+              className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-auto"
               src={ContactDesktopImage}
               alt=""
             />

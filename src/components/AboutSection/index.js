@@ -4,21 +4,21 @@ import AboutDesktopImage from '../../images/about-desktop.svg';
 import AboutMobileImage from '../../images/about-mobile.svg';
 
 const AboutSection = () => (
-  <section className="max-w-5xl mx-auto overflow-hidden pb-12 pr-4">
-    <div className="max-w-3xl ml-auto">
+  <section className="max-w-5xl mx-auto overflow-hidden pb-24 pr-4 w-full">
+    <div className="max-w-4xl ml-auto">
       <div className="flex items-start">
         <img
-          className="hidden sm:block mr-6 w-64"
+          className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-auto"
           src={AboutDesktopImage}
           alt=""
         />
         <div className="text-xl w-full">
           <img
-            className="sm:hidden p-6 mx-auto w-full"
+            className="sm:hidden mx-auto p-6 w-full"
             src={AboutMobileImage}
             alt=""
           />
-          <div className="squiggle bg-right leading-tight max-w-lg mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4">
+          <div className="squiggle bg-right leading-tight mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4 w-full">
             <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
               About Us
             </h2>
