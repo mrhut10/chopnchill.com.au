@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const Drinks = () => (
   <>
-    <h3 className="font-display leading-none mb-4 text-2xl text-center top-0 uppercase">
+    <h3 className="font-display leading-none mb-4 text-2xl top-0 uppercase">
       Beers and Ciders
     </h3>
     <h4 className="font-display leading-none mb-2 mt-4 sm:mt-0 sm:text-2xl uppercase">
@@ -42,9 +42,6 @@ const Drinks = () => (
     <Drink title="Furphy Refreshing Ale" price="$7.5" />
     <Drink title="Canadian Club &amp; Dry" price="$9.5" />
     <br />
-    <h3 className="font-display leading-none mb-4 text-2xl text-center top-0 uppercase">
-      Wine Time
-    </h3>
     <Heading title="White&nbsp;Wine" />
     <MenuItem
       title="The Anchorage Semillon Sauvignon Blanc"
@@ -287,7 +284,7 @@ const Drinks = () => (
       Rasberry
     </MenuItem>
     <br />
-    <h3 className="font-display leading-none mb-4 text-2xl text-center top-0 uppercase">
+    <h3 className="font-display leading-none mb-4 text-2xl top-0 uppercase">
       Soft Drinks | Juices
     </h3>
     <Drink title="Sprite, Diet coke, Lift, Red Fanta, Dry Ginger" price="$5" />
