@@ -21,11 +21,11 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer>
+      <footer className="text-center">
         <div className="bg-brand-blue flex flex-wrap leading-tight px-6 py-10 relative text-white">
           <div className="footer-squiggle-horizontal sm:footer-squiggle flex flex-col items-center mb-10 sm:mb-0 pb-10 pl-3 pr-6 w-full sm:w-1/4">
             <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
-              We're <br />
+              We're <br className="sm:hidden" />
               Very Social
             </h3>
             <p>Follow us to keep updated</p>
@@ -34,14 +34,14 @@ const Footer = () => (
                 className="flex items-center justify-center mr-2"
                 href={data.site.siteMetadata.instagram}
               >
-                <FaInstagram className="mr-1" />
+                <FaInstagram className="mr-1 text-xl" />
                 #chopnchill
               </a>
               <a
                 className="flex items-center justify-center mr-2"
                 href={data.site.siteMetadata.facebook}
               >
-                <FaFacebookSquare className="mr-1" />
+                <FaFacebookSquare className="mr-1 text-xl" />
                 @chopnchill
               </a>
             </p>
@@ -95,13 +95,11 @@ const Footer = () => (
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
-              </ul>
-              <ul className="ml-auto">
-                <li>
-                  <Link to="/franchising">Franchising</Link>
-                </li>
                 <li>
                   <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/franchising">Franchising</Link>
                 </li>
               </ul>
             </div>
@@ -112,7 +110,7 @@ const Footer = () => (
             alt=""
           />
         </div>
-        <div className="flex flex-wrap items-center justify-center mb-0 p-4 text-center w-full">
+        <div className="flex flex-wrap items-center justify-center mb-0 p-4 w-full">
           © {new Date().getFullYear()} {data.site.siteMetadata.title}{' '}
           <span className="mx-2">|</span>
           Website by
