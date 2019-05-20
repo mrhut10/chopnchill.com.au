@@ -47,7 +47,7 @@ const EventsSection = () => (
                 src={EventsMobileImage}
                 alt=""
               />
-              <div className="squiggle bg-right leading-tight max-w-lg mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4 w-full">
+              <div className="squiggle bg-right leading-tight mb-4 ml-auto sm:mr-12 pr-6 sm:pr-12 pl-4 w-full">
                 <h2 className="font-display leading-none my-6 text-5xl text-center uppercase w-full">
                   Join Us For
                   <br />
