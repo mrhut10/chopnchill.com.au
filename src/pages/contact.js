@@ -20,6 +20,12 @@ const ContactPage = () => (
         hero: file(relativePath: { eq: "contact.jpg" }) {
           ...contactPageFluidImage
         }
+        site {
+          siteMetadata {
+            phone
+            phoneFormatted
+          }
+        }
       }
     `}
     render={data => (
@@ -48,15 +54,20 @@ const ContactPage = () => (
             </div>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto p-4">
-          <div className="max-w-lg mx-auto p-4 text-2xl">
+        <div className="flex flex-wrap justify-center p-4">
+          <div className="max-w-md p-4 text-2xl w-full">
             <p className="mb-4">
               We are located on the Town Green overlooking the Hastings River,
-              call us on (02) 6583 9155 or complete the enquiry form below. Call
-              or email with your questions and queries. We look forward to
-              hearing from you!
+              call us on{' '}
+              <a href={`tel:${data.site.siteMetadata.phone}`}>
+                {data.site.siteMetadata.phoneFormatted}
+              </a>{' '}
+              or complete the enquiry form below. Call or email with your
+              questions and queries. We look forward to hearing from you!
             </p>
-            <h2 className="max-w-sm text-3xl uppercase w-full">Enquiry</h2>
+          </div>
+          <div className="max-w-sm p-4 w-full">
+            <h2 className="text-3xl uppercase">Enquiry</h2>
             <ContactForm />
           </div>
         </div>
