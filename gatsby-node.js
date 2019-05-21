@@ -46,8 +46,5 @@ exports.createPages = ({ graphql, actions }) => {
 
     // create each menu page i.e. /menu/to-share
     result.data.allMenuJson.edges.forEach(menuEdgeToPage);
-
-    // we will want to create a root menu route with this method i.e. /menu
-    // however we can't do this until we remove the old /pages/menu.js file
   });
 };
