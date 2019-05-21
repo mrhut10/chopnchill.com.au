@@ -28,7 +28,7 @@ const IndexPage = () => (
       />
       <MenuSection />
       <AboutSection />
-      <Banner>Indoors. Outdoors. Doggo Friendly. Call to Book a Table.</Banner>
+      <Banner>If you can't stay — take it away!</Banner>
       <EventsSection />
       <ContactSection />
       <MapSection />
