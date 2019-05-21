@@ -1,9 +1,12 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 import propTypes from 'prop-types';
+import slugify from 'slugify';
+import TabLabel from './TabLabel';
 
-const Tabs = ({ TabArray }) => {
-  const onChange = e => navigate(e.target.value);
+const Tabs = ({ TabArray, selectedTab }) => {
+  const onChange = e =>
+    navigate(`/menu/${slugify(e.target.value, { lower: true })}`);
 
   return (
     <div className="menu sm:flex max-w-3xl mx-auto sm:p-4 text-base w-full">
@@ -13,12 +16,12 @@ const Tabs = ({ TabArray }) => {
         <select
           onChange={onChange}
           className="appearance-none bg-brand-blue block border-2 border-brand-blue font-display leading-tight focus:outline-none pr-8 px-4 py-2 rounded-none focus:shadow-outline text-white w-full"
-          value={TabArray.find(Tab => Tab.active).path}
+          value={selectedTab}
         >
           {TabArray.map(Tab => (
             <option
               key={Tab.labelText}
-              value={Tab.path}
+              value={Tab.labelText}
               className="tab-list-active cursor-pointer flex items-center leading-none px-2 py-4 text-center text-base uppercase w-full"
             >
               {/* seems to only accept text content (no children) */}
@@ -43,13 +46,20 @@ const Tabs = ({ TabArray }) => {
             key={tab.labelText}
             className="border-brand-blue border-b-2 border-l-2 flex items-center justify-center w-8"
           >
-            {tab.label}
+            {
+              <TabLabel
+                active={selectedTab === tab.labelText}
+                key={tab.labelText}
+                label={tab.labelText}
+                path={tab.path}
+              />
+            }
           </li>
         ))}
       </ul>
       <div className="border-2 border-brand-blue px-6 py-8 w-full">
         <div className="sm:squiggle sm:pl-6 text-xl w-full">
-          {TabArray.find(tab => tab.active).Content}
+          {TabArray.find(tab => tab.labelText === selectedTab).Content}
         </div>
       </div>
     </div>
@@ -58,6 +68,7 @@ const Tabs = ({ TabArray }) => {
 
 Tabs.propTypes = {
   TabArray: propTypes.arrayOf(propTypes.any),
+  selectedTab: propTypes.string,
 };
 
 export default Tabs;
