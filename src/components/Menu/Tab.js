@@ -1,39 +1,23 @@
-import React, { Component } from 'react';
 import propTypes from 'prop-types';
+import TabLabel from './TabLabel';
 
-class Tab extends Component {
-  static propTypes = {
-    activeTab: propTypes.string.isRequired,
-    label: propTypes.string.isRequired,
-    onClick: propTypes.func.isRequired,
+const Tab = ({ label, path, active, Content }) => {
+  const generatedLabel = TabLabel({ active, label, path });
+
+  return {
+    active,
+    Content,
+    path,
+    labelText: label,
+    label: generatedLabel,
   };
+};
 
-  onClick = () => {
-    const { label, onClick } = this.props;
-    onClick(label);
-  };
-
-  render() {
-    const {
-      onClick,
-      props: { activeTab, label },
-    } = this;
-
-    let className = 'tab-list-item';
-
-    if (activeTab === label) {
-      className += ' tab-list-active';
-    }
-
-    return (
-      <li
-        className={`${className} border-brand-blue border-b border-l-2 border-t cursor-pointer flex font-display items-center leading-none px-2 py-4 text-base uppercase`}
-        onClick={onClick}
-      >
-        {label}
-      </li>
-    );
-  }
-}
+Tab.propTypes = {
+  label: propTypes.string,
+  path: propTypes.string,
+  activeTab: propTypes.bool,
+  Content: propTypes.element,
+};
 
 export default Tab;

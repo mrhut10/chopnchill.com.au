@@ -7,8 +7,8 @@ import slugify from 'slugify';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import DumbTabs from '../components/Menu/DumbTabs';
-import DumbTab from '../components/Menu/DumbTab';
+import Tabs from '../components/Menu/Tabs';
+import Tab from '../components/Menu/Tab';
 import ToShare from '../components/Menu/ToShare';
 import OrNotToShare from '../components/Menu/OrNotToShare';
 import Breakfast from '../components/Menu/Breakfast';
@@ -101,16 +101,14 @@ const MenuPage = ({ pageContext }) => {
               </div>
             </div>
           </div>
-          <DumbTabs
+          <Tabs
             TabArray={data.allMenuJson.edges.map(tab => {
               const label = tab.node.title;
-              const key = tab.node.id;
               const path = `/menu/${slugify(label, { lower: true })}`;
               const active = pageContext.selectedMenuTab === label;
               const Content = LabelToContent(label);
-              return DumbTab({
+              return Tab({
                 label,
-                key,
                 path,
                 active,
                 Content: <Content />,
