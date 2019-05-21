@@ -15,8 +15,8 @@ const MenuItem = ({ title, children, price }) => (
 
 MenuItem.propTypes = {
   title: propTypes.string,
-  children: propTypes.object,
-  price: propTypes.string,
+  children: propTypes.node,
+  price: propTypes.node,
 };
 
 export default MenuItem;

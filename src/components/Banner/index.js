@@ -8,7 +8,7 @@ const Banner = ({ children }) => (
 );
 
 Banner.propTypes = {
-  children: propTypes.arrayOf(propTypes.element),
+  children: propTypes.node.isRequired,
 };
 
 export default Banner;
