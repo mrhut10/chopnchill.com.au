@@ -48,12 +48,10 @@ const LabelToContent = label => {
 const edgeToTab = pageContext => edge => {
   const label = edge.node.title;
   const path = `/menu/?${queryString.stringify({ tab: label })}#menu`;
-  const active = pageContext.selectedMenuTab === label;
   const Content = LabelToContent(label);
   return Tab({
     label,
     path,
-    active,
     Content: <Content />,
   });
 };
@@ -116,7 +114,10 @@ const MenuPage = ({ pageContext, location }) => {
             </div>
           </div>
           <Tabs
-            selectedTab={queryString.parse(location.search).tab || pageContext.selectedMenuTab}
+            selectedTab={
+              queryString.parse(location.search).tab ||
+              pageContext.selectedMenuTab
+            }
             TabArray={data.allMenuJson.edges.map(edgeToTab(pageContext))}
           />
         </Layout>
@@ -127,6 +128,7 @@ const MenuPage = ({ pageContext, location }) => {
 
 MenuPage.propTypes = {
   pageContext: propTypes.any,
+  location: propTypes.any,
 };
 
 export default MenuPage;
