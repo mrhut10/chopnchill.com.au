@@ -1,12 +1,11 @@
 import React from 'react';
 import { navigate } from 'gatsby';
 import propTypes from 'prop-types';
-import slugify from 'slugify';
 import TabLabel from './TabLabel';
 
 const Tabs = ({ TabArray, selectedTab }) => {
   const onChange = e =>
-    navigate(`/menu/${slugify(e.target.value, { lower: true })}`);
+    navigate(TabArray.find(tab => tab.labelText === e.target.value).path);
 
   return (
     <div className="menu sm:flex max-w-3xl mx-auto sm:p-4 text-base w-full">
