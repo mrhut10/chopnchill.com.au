@@ -21,6 +21,8 @@ exports.createPages = ({ graphql, actions }) => {
   );
   const menuEdgeToPage = edge => {
     const slug = slugify(edge.node.title, { lower: true });
+    /*
+    // create each menu page
     createPage({
       path: `/menu/${slug}`,
       component: menuTemplate,
@@ -28,6 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
         selectedMenuTab: edge.node.title,
       },
     });
+    */
     if (slug === 'to-share') {
       createPage({
         path: `/menu/`,
