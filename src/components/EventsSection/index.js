@@ -37,7 +37,7 @@ const EventsSection = () => (
         <div className="max-w-4xl ml-auto">
           <div className="flex items-start">
             <img
-              className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-auto"
+              className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-full"
               src={EventsDesktopImage}
               alt=""
             />

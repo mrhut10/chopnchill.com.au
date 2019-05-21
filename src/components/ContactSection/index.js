@@ -47,7 +47,7 @@ const ContactSection = () => (
               </div>
             </div>
             <img
-              className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-auto"
+              className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-full"
               src={ContactDesktopImage}
               alt=""
             />
