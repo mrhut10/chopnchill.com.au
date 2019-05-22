@@ -15,7 +15,7 @@ import OrNotToShare from '../components/Menu/OrNotToShare';
 import Breakfast from '../components/Menu/Breakfast';
 import VeganVegetarian from '../components/Menu/VeganVegetarian';
 import GlutenFree from '../components/Menu/GlutenFree';
-import Drinks from '../components/Menu/Drinks';
+// import Drinks from '../components/Menu/Drinks';
 
 const contentPaths = [
   ['', ToShare],
@@ -24,7 +24,7 @@ const contentPaths = [
   ['breakfast', Breakfast],
   ['vegan-vegetarian', VeganVegetarian],
   ['gluten-free', GlutenFree],
-  ['drinks', Drinks],
+  // ['drinks', Drinks],
 ];
 
 const LabelToContent = label => {
