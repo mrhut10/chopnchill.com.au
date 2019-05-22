@@ -21,8 +21,8 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="text-center">
-        <div className="bg-brand-blue flex flex-wrap leading-tight px-6 py-10 relative text-white">
+      <footer className="bg-brand-blue text-center">
+        <div className="flex flex-wrap leading-tight max-w-5xl mx-auto px-6 py-10 relative text-white w-full">
           <div className="footer-squiggle-horizontal sm:footer-squiggle flex flex-col items-center mb-10 sm:mb-0 pb-10 pl-3 pr-6 w-full sm:w-1/4">
             <h3 className="font-display mb-1 text-2xl tracking-wider uppercase">
               We're <br className="sm:hidden" />
@@ -110,7 +110,7 @@ const Footer = () => (
             alt=""
           />
         </div>
-        <div className="flex flex-wrap items-center justify-center mb-0 p-4 w-full">
+        <div className="bg-white flex flex-wrap items-center justify-center mb-0 p-4 w-full">
           © {new Date().getFullYear()} {data.site.siteMetadata.title}{' '}
           <span className="mx-2">|</span>
           Website by
