@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-import MenuItem from './MenuItem';
+import MenuItem from '../MenuItem';
 
 const Drinks = () => (
   <>

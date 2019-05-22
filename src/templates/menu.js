@@ -5,26 +5,52 @@ import Img from 'gatsby-image';
 import propTypes from 'prop-types';
 import slugify from 'slugify';
 import queryString from 'query-string';
+import moment from 'moment';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Tabs from '../components/Menu/Tabs';
 import Tab from '../components/Menu/Tab';
-import ToShare from '../components/Menu/ToShare';
-import OrNotToShare from '../components/Menu/OrNotToShare';
-import Breakfast from '../components/Menu/Breakfast';
-import VeganVegetarian from '../components/Menu/VeganVegetarian';
-import GlutenFree from '../components/Menu/GlutenFree';
-// import Drinks from '../components/Menu/Drinks';
+// Menus
+import ToShareJune from '../components/Menu/June/ToShare';
+import ToShareJuly from '../components/Menu/July/ToShare';
+import OrNotToShareJune from '../components/Menu/June/OrNotToShare';
+import OrNotToShareJuly from '../components/Menu/July/OrNotToShare';
+import BreakfastJune from '../components/Menu/June/Breakfast';
+import BreakfastJuly from '../components/Menu/July/Breakfast';
+import VeganVegetarianJune from '../components/Menu/June/VeganVegetarian';
+import VeganVegetarianJuly from '../components/Menu/July/VeganVegetarian';
+import GlutenFreeJune from '../components/Menu/June/GlutenFree';
+import GlutenFreeJuly from '../components/Menu/July/GlutenFree';
+// import Drinks from '../components/Menu/June/Drinks';
+
+// moment().isSameOrBefore('2019-07-09') ? console.log(true) : console.log(false);
 
 const contentPaths = [
-  ['', ToShare],
-  ['to-share', ToShare],
-  ['or-not-to-share', OrNotToShare],
-  ['breakfast', Breakfast],
-  ['vegan-vegetarian', VeganVegetarian],
-  ['gluten-free', GlutenFree],
-  // ['drinks', Drinks],
+  ['', ToShareJune],
+  [
+    'to-share',
+    moment().isSameOrBefore('2019-07-09') ? ToShareJune : ToShareJuly,
+  ],
+  [
+    'or-not-to-share',
+    moment().isSameOrBefore('2019-07-09') ? OrNotToShareJune : OrNotToShareJuly,
+  ],
+  [
+    'breakfast',
+    moment().isSameOrBefore('2019-07-09') ? BreakfastJune : BreakfastJuly,
+  ],
+  [
+    'vegan-vegetarian',
+    moment().isSameOrBefore('2019-07-09')
+      ? VeganVegetarianJune
+      : VeganVegetarianJuly,
+  ],
+  [
+    'gluten-free',
+    moment().isSameOrBefore('2019-07-09') ? GlutenFreeJune : GlutenFreeJuly,
+  ],
+  // ['drinks', moment().isSameOrBefore('2019-07-09') ? DrinksJune : DrinksJuly],
 ];
 
 const LabelToContent = label => {
@@ -45,7 +71,7 @@ const LabelToContent = label => {
   return foundIt[1];
 };
 
-const edgeToTab = pageContext => edge => {
+const edgeToTab = () => edge => {
   const label = edge.node.title;
   const path = `/menu/?${queryString.stringify({ tab: label })}#menu`;
   const Content = LabelToContent(label);
