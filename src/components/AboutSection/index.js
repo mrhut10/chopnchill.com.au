@@ -6,13 +6,13 @@ import AboutMobileImage from '../../images/about-mobile.svg';
 const AboutSection = () => (
   <section className="max-w-5xl mx-auto overflow-hidden pb-24 pr-4 w-full">
     <div className="max-w-4xl ml-auto">
-      <div className="flex items-start">
+      <div className="flex items-center">
         <img
           className="hidden sm:block md:max-w-xs ml-4 mr-6 w-64 md:w-full"
           src={AboutDesktopImage}
           alt=""
         />
-        <div className="text-xl w-full">
+        <div className="text-2xl w-full">
           <img
             className="sm:hidden mx-auto p-6 w-full"
             src={AboutMobileImage}
