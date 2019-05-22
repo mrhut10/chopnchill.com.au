@@ -28,7 +28,7 @@ const IndexPage = () => (
       />
       <MenuSection />
       <AboutSection />
-      <Banner>If you can't stay — take it away!</Banner>
+      <Banner>If you can't stay, take me away!</Banner>
       <EventsSection />
       <ContactSection />
       <MapSection />
