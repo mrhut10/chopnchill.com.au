@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import propTypes from 'prop-types';
 import slugify from 'slugify';
+import queryString from 'query-string';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -44,6 +45,17 @@ const LabelToContent = label => {
   return foundIt[1];
 };
 
+const edgeToTab = pageContext => edge => {
+  const label = edge.node.title;
+  const path = `/menu/?${queryString.stringify({ tab: label })}#menu`;
+  const Content = LabelToContent(label);
+  return Tab({
+    label,
+    path,
+    Content: <Content />,
+  });
+};
+
 const pageQuery = graphql`
   fragment menuPageFluidImage on File {
     childImageSharp {
@@ -68,7 +80,7 @@ const pageQuery = graphql`
   }
 `;
 
-const MenuPage = ({ pageContext }) => {
+const MenuPage = ({ pageContext, location }) => {
   useEffect(() => {
     navigate('#menu');
   }, []);
@@ -102,18 +114,11 @@ const MenuPage = ({ pageContext }) => {
             </div>
           </div>
           <Tabs
-            TabArray={data.allMenuJson.edges.map(tab => {
-              const label = tab.node.title;
-              const path = `/menu/${slugify(label, { lower: true })}`;
-              const active = pageContext.selectedMenuTab === label;
-              const Content = LabelToContent(label);
-              return Tab({
-                label,
-                path,
-                active,
-                Content: <Content />,
-              });
-            })}
+            selectedTab={
+              queryString.parse(location.search).tab ||
+              pageContext.selectedMenuTab
+            }
+            TabArray={data.allMenuJson.edges.map(edgeToTab(pageContext))}
           />
         </Layout>
       )}
@@ -123,6 +128,7 @@ const MenuPage = ({ pageContext }) => {
 
 MenuPage.propTypes = {
   pageContext: propTypes.any,
+  location: propTypes.any,
 };
 
 export default MenuPage;

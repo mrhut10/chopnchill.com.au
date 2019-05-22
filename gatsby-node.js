@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
   );
   const menuEdgeToPage = edge => {
     const slug = slugify(edge.node.title, { lower: true });
+    // create each menu page
     createPage({
       path: `/menu/${slug}`,
       component: menuTemplate,
