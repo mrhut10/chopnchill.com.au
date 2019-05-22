@@ -39,7 +39,7 @@ export default class ContactForm extends React.Component {
         data-netlify="true"
         onSubmit={this.handleSubmit}
         action="/success/"
-        className="max-w-sm w-full"
+        className="w-full"
         method="post"
         name="contact"
       >
