@@ -3,40 +3,40 @@ import MenuItem from './MenuItem';
 
 const ToShare = () => (
   <>
-    <MenuItem title="SAN-FRAN CHOW BOW" price="$18.5">
+    <MenuItem title="San-Fran Chow Bow" price="$18.5">
       <p>
         Juicy shredded Smoked Pork, flavoured with light Spices and served
         ready-to-roll with Peanuts, Sambal ‘n Lime in fresh Lettuce Cups.
       </p>
     </MenuItem>
-    <MenuItem title="ROLLS" price="$13.5">
+    <MenuItem title="Rolls" price="$13.5">
       <p>
         A fresh made Brisket ‘n Chinese Vegetable Spring Roll, house-made Fresh
         Chicken vermicelli noodles, fresh herbs and greens, egg and served with
         Tangy Asian Dipping sauce.
       </p>
     </MenuItem>
-    <MenuItem title="CRISPY CHICKEN WINGS" price="$18">
+    <MenuItem title="Crispy Chicken Wings" price="$18">
       <p>
         Crispy Chicken Wings served with your choice of Lazy Paul’s BBQ Marinate
         or Spicy Buffalo Sauce. Comes with Carrot ‘n Celery Sticks and Blue
         Cheese Dressing.
       </p>
     </MenuItem>
-    <MenuItem title="GRILLED CALAMARI" price="$19">
+    <MenuItem title="Grilled Calamari" price="$19">
       <p>
         Char-grilled Calamari cooked over a high heat, sprinkled with Coriander,
         Bean-shoots and Mint. Served with our own Chilli ‘n Lime Dipping Sauce.
       </p>
     </MenuItem>
-    <MenuItem title="ART OF AVOCADO" price="$17.5">
+    <MenuItem title="Art of Avocado" price="$17.5">
       <p>
         Baked Avocado Wedges with Smoked BBQ Brisket, diced Bacon and
         Three-Cheese Melt, splashed with Lazy Paul’s BBQ Marinate and a dash of
         Japanese Mayonnaise.
       </p>
     </MenuItem>
-    <MenuItem title="BAKED CAMEMBERT" price="$19.5">
+    <MenuItem title="Baked Camembert" price="$19.5">
       <p>
         A warm-baked Wheel of Camembert Cheese topped with a locally Sweet
         Caramelized Chutney, served with toasted Sourdough, Carrot ‘n Celery
