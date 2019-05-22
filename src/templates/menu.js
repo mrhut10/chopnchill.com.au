@@ -140,10 +140,7 @@ const MenuPage = ({ pageContext, location }) => {
             </div>
           </div>
           <Tabs
-            selectedTab={
-              queryString.parse(location.search).tab ||
-              pageContext.selectedMenuTab
-            }
+            selectedTab={queryString.parse(location.search).tab || 'To Share?'}
             TabArray={data.allMenuJson.edges.map(edgeToTab(pageContext))}
           />
         </Layout>
