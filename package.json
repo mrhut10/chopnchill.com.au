@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-json": "^2.1.11",
     "gatsby-transformer-sharp": "^2.1.19",
+    "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.5.0",
     "react": "^16.8.6",
